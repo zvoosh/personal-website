@@ -1,12 +1,15 @@
 import { Modal } from "antd";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const HeaderPage = () => {
 
     const [isModalOpen, setIsModalOpen] = useState<boolean>()
 
     const navigate = useNavigate();
+    const location = useLocation();
+
+    console.log('dddd', location)
 
     return (
         <div className="nav-font">
@@ -17,12 +20,12 @@ const HeaderPage = () => {
                             navigate("/");
                         }}>Dusan Ilic</div>
                         <div>
-                            <span className=" navtitle text-underline m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset" onClick={() => {
+                            <span className={`navtitle  ${location.pathname === '/' && 'text-blue text-underline'} m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset`} onClick={() => {
                                 navigate("/");
                             }}>
                                 Welcome
                             </span>
-                            <span className=" navtitle text-underline m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset" onClick={() => {
+                            <span className={`navtitle  ${location.pathname === '/profile' && 'text-blue text-underline'} m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset`} onClick={() => {
                                 navigate("/profile");
                             }}>
                                 Profile
@@ -44,13 +47,13 @@ const HeaderPage = () => {
                 setIsModalOpen(false);
             }}>
                 <p className="mt-1">
-                    Hi! 😜
+                    Hi!
                 </p>
                 <p className="mt-1">
                     My name is Dusan Ilic I am a software engeener that makes web applications.
                 </p>
                 <p className="mt-1">
-                    I come from Belgrade a city from Serbia.
+                    I am from Belgrade a city from Serbia.
                 </p>
                 <p className="mt-1">
                     My email: <a href="https://mail.google.com/" target="_blank">dusan.ilic1999@gmail.com</a>

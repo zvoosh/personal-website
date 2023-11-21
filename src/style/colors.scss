@@ -38,3 +38,9 @@ $turquoise: turquoise;
         background-color: $turquoise;
     }
 }
+
+.text {
+    &-blue {
+        color: blue
+    }
+}
