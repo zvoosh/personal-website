@@ -1,9 +1,9 @@
 
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
-import { NewHome } from './components/NewHome';
+// import { Routes, Route } from 'react-router-dom';
+// import { NewHome } from './components/NewHome';
 import { HeaderPage } from './layout/HeaderPage';
-import { Profile } from './components/Profile';
+// import { Profile } from './components/Profile';
 
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
         <HeaderPage />
       </div>
       <div className='contentSpace'>
-        <Routes>
+        {/* <Routes>
           <Route path="/profile" element={<Profile />} />
           <Route path="" element={<NewHome />} />
-        </Routes>
+        </Routes> */}
       </div>
     </div>
   )
