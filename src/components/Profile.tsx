@@ -3,8 +3,8 @@ const Profile = () => {
         <div className="w-100 h-100" style={{ background: 'white' }}>
             <div className="w-100 h-100 flex justify-center align-center flex-column">
                 <div className="profileTitle">
-                    <span>DUŠAN ILIĆ</span>
-                    <span className="font-10 mt-1">FRONT END DEVELOPER</span>
+                    <div>DUŠAN ILIĆ</div>
+                    <div className="font-09 mt-1">FRONT END DEVELOPER</div>
                 </div>
                 <div className="profilslika">
                     <div className="detailscontet">
@@ -12,9 +12,9 @@ const Profile = () => {
                         <div className="detailsSection">
                             ADDRESS
                             <div className="detailsSectionContent">
-                                <div>Resavksa 8</div>
-                                <div>Belgrade, 11000</div>
-                                <div>Serbia</div>
+                                <div className="mb-05">Resavksa 8</div>
+                                <div className="mb-05">Belgrade, 11000</div>
+                                <div className="mb-05">Serbia</div>
                             </div>
                         </div>
                         <div className="detailsSection">
@@ -28,7 +28,7 @@ const Profile = () => {
                         <div className="detailsSection">
                             DATE/PLACE OF BIRTH
                             <div className="detailsSectionContent">
-                                <div>23.12.1999</div>
+                                <div className="mb-05">23.12.1999</div>
                                 <div>Belgrade</div>
                             </div>
                         </div>
@@ -43,12 +43,12 @@ const Profile = () => {
                         <div className="details mt-1">LINKS</div>
                         <a target="_blank" href="https://www.linkedin.com/in/dusan-ilic-0997b4166/">LinkedIn</a>
                         <div className="details mt-1">SKILLS</div>
-                        <div className="mt-05">Node.js - intermediate</div>
-                        <div className="mt-05">HTML & CSS - intermediate</div>
-                        <div className="mt-05">React - intermediate</div>
-                        <div className="mt-05">Git - intermediate</div>
-                        <div className="mt-05">JavaScript - intermediate</div>
-                        <div className="mt-05">TypeScript - intermediate</div>
+                        <div className="mt-05 linespace">Node.js - intermediate</div>
+                        <div className="mt-05 linespace">HTML & CSS - intermediate</div>
+                        <div className="mt-05 linespace">React - intermediate</div>
+                        <div className="mt-05 linespace">Git - intermediate</div>
+                        <div className="mt-05 linespace">JavaScript - intermediate</div>
+                        <div className="mt-05 linespace">TypeScript - intermediate</div>
                         <div className="details mt-1">LANGUAGES</div>
                         <div className="mt-05">English - Fluent</div>
                         <div className="details mt-1">HOBBY</div>
@@ -63,9 +63,15 @@ const Profile = () => {
                         <div className="profileSectionTitle mt-1">EMPLOYMENT HISTORY</div>
                         <div className="jobTitle">
                             <div>
-                                Software Engeener, Factory World Wide
+                                <div>
+                                    Software Engeener,
+                                </div>
+                                <div>
+
+                                    Factory World Wide
+                                </div>
                             </div>
-                            <div>
+                            <div className="mr-4">
                                 Belgrade
                             </div>
                         </div>
@@ -89,9 +95,14 @@ const Profile = () => {
                         <div className="profileSectionTitle mt-1">EDUCATION</div>
                         <div className="uniTitle">
                             <div>
-                                BSc Compter science, University of Singidunum
+                                <div>
+                                    BSc Compter science,
+                                </div>
+                                <div>
+                                    University of Singidunum
+                                </div>
                             </div>
-                            <div>
+                            <div className="mr-4">
                                 Belgrade
                             </div>
                         </div>
@@ -104,9 +115,14 @@ const Profile = () => {
                         <div className="profileSectionTitle mt-1">REFERENCES</div>
                         <div className="refTitle">
                             <div>
-                                Rastko Ilic from Factory World Wide
+                                <div>
+                                    Rastko Ilic from
+                                </div>
+                                <div>
+                                    Factory World Wide
+                                </div>
                             </div>
-                            <div>
+                            <div className="mr-4">
                                 Belgrade
                             </div>
                         </div>

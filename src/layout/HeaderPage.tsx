@@ -13,22 +13,22 @@ const HeaderPage = () => {
             <div style={{ height: '100%', width: '100%' }}>
                 <div>
                     <div style={{ height: '10vh', background: 'white' }} className="flex justify-between align-center">
-                        <div className="ml-2 font-13 cursor font-fam letter-spacing-2" onClick={() => {
+                        <div className="ml-2 font-13 cursor font-fam letter-spacing-2 logo" onClick={() => {
                             navigate("/");
                         }}>Dusan Ilic</div>
                         <div>
-                            <span className="text-underline m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset" onClick={() => {
+                            <span className=" navtitle text-underline m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset" onClick={() => {
                                 navigate("/");
                             }}>
                                 Welcome
                             </span>
-                            <span className="text-underline m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset" onClick={() => {
+                            <span className=" navtitle text-underline m-1 font-10 text-bold unselect cursor letter-spacing-2 underline-offset" onClick={() => {
                                 navigate("/profile");
                             }}>
                                 Profile
                             </span>
                         </div>
-                        <div className="h-10 m-1 flex align-center p-12 bg-black" onClick={() => {
+                        <div className="h-10 m-1 flex align-center p-12 bg-black cntcbuttn" onClick={() => {
                             setIsModalOpen((prev) => !prev);
                         }}>
                             <span className="contact-btn">

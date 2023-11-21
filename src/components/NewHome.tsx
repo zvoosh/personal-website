@@ -4,7 +4,7 @@ const NewHome = () => {
             <div className="w-100 h-100 bg-green">
 
                 <div className="w-100 h-100 background">
-                    <div className="rotate_text" >
+                    <div className="rotate_text dusan-title"  >
                         DUŠAN ILIĆ
                     </div>
                     <div className="rotate_text" >
@@ -16,7 +16,7 @@ const NewHome = () => {
                 </div>
             </div>
             <div className="bg-green tagSection">
-                <div style={{ marginLeft: '6rem' }}>
+                <div className="prodSection">
                     <div className="title">
                         DUŠAN ILIĆ
                     </div>
@@ -25,11 +25,11 @@ const NewHome = () => {
                             <div className="mb-05">Web developer</div>
                             <div>React developer</div>
                         </div>
-                        <div className="flex flex-column">
+                        <div className="flex flex-column ml-2">
                             <div className="mb-05">University student</div>
                             <div>dusan.ilic1999@gmail.com</div>
                         </div>
-                        <div className="flex flex-column">
+                        <div className="flex flex-column ml-3">
                             <div className="mb-05">#Profile</div>
                             <div>#Skills</div>
                         </div>
