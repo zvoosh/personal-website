@@ -1,0 +1,40 @@
+$red: red;
+$blue: blue;
+$yellow: yellow;
+$green: green;
+$brown: brown;
+$turquoise: turquoise;
+
+.bg {
+    &-red {
+        background-color: red;
+    }
+
+    &-white {
+        background-color: white;
+    }
+
+    &-black {
+        background-color: black;
+    }
+
+    &-blue {
+        background-color: blue;
+    }
+
+    &-yellow {
+        background-color: $yellow;
+    }
+
+    &-green {
+        background-color: green;
+    }
+
+    &-brown {
+        background-color: $brown;
+    }
+
+    &-turquoise {
+        background-color: $turquoise;
+    }
+}

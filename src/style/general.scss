@@ -1,0 +1,52 @@
+.scale-12 {
+    transform: scale(1.2);
+}
+
+.nav-font {
+    font-family: 'Autour One', cursive;
+}
+
+.unselect {
+    user-select: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+.workSpace {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.contentSpace {
+    height: 90vh;
+    background-color: black;
+
+}
+
+.headerSpace {
+    height: 10vh;
+}
+
+.transparent {
+    opacity: 0.5;
+}
+
+
+.z--1 {
+    z-index: -1;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.z-4 {
+    z-index: 4;
+}
