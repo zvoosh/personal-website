@@ -1,9 +1,9 @@
 
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
-import { NewHome } from './components/NewHome';
-import { HeaderPage } from './layout/HeaderPage';
-import { Profile } from './components/Profile';
+// import { Routes, Route } from 'react-router-dom';
+// import { NewHome } from './components/NewHome';
+// import { HeaderPage } from './layout/HeaderPage';
+// import { Profile } from './components/Profile';
 
 
 function App() {
