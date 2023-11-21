@@ -9,7 +9,6 @@ import { Profile } from './components/Profile';
 function App() {
 
   return (
-    // <div>DUSAN</div>
     <div className='workSpace'>
       <div className='headerSpace'>
         <HeaderPage />
