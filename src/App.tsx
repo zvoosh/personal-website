@@ -1,26 +1,26 @@
 
 import './App.css'
-// import { Routes, Route } from 'react-router-dom';
-// import { NewHome } from './components/NewHome';
-// import { HeaderPage } from './layout/HeaderPage';
-// import { Profile } from './components/Profile';
+import { Routes, Route } from 'react-router-dom';
+import { NewHome } from './components/NewHome';
+import { HeaderPage } from './layout/HeaderPage';
+import { Profile } from './components/Profile';
 
 
 function App() {
 
   return (
-    <div>DUSAN JE PICKA</div>
-    // <div className='workSpace'>
-    //   <div className='headerSpace'>
-    //     <HeaderPage />
-    //   </div>
-    //   <div className='contentSpace'>
-    //     <Routes>
-    //       <Route path="/profile" element={<Profile />} />
-    //       <Route path="" element={<NewHome />} />
-    //     </Routes>
-    //   </div>
-    // </div>
+    // <div style={{ width: '100vw', height: '100vh', background: 'blue' }}>DUSAN JE PICKA</div>
+    <div className='workSpace'>
+      <div className='headerSpace'>
+        <HeaderPage />
+      </div>
+      <div className='contentSpace'>
+        <Routes>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="" element={<NewHome />} />
+        </Routes>
+      </div>
+    </div>
   )
 }
 
