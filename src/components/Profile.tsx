@@ -50,9 +50,9 @@ const Profile = () => {
                         <div className="mt-05 linespace">JavaScript - intermediate</div>
                         <div className="mt-05 linespace">TypeScript - intermediate</div>
                         <div className="details mt-1">LANGUAGES</div>
-                        <div className="mt-05">English - Fluent</div>
+                        <div className="mt-05 linespace">English - Fluent</div>
                         <div className="details mt-1">HOBBIES</div>
-                        <div className="mt-05">Tenis, Gaming, Swimming</div>
+                        <div className="mt-05 linespace">Tenis, Gaming, Swimming</div>
                     </div>
                     <div className="profileSection">
                         <div className="profileSectionTitle mt-1">PROFILE</div>

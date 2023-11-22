@@ -12,7 +12,7 @@ const HeaderPage = () => {
     console.log('dddd', location)
 
     return (
-        <div className="nav-font">
+        <div className="nav-font mobileoverflow">
             <div style={{ height: '100%', width: '100%' }}>
                 <div>
                     <div style={{ height: '10vh', background: 'white' }} className="flex justify-between align-center">

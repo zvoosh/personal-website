@@ -50,6 +50,11 @@
         padding-top: 6rem;
     }
 
+    .textnesto {
+        position: relative;
+        top: 25%;
+    }
+
     .dusan-title {
         margin-right: 6rem;
     }
@@ -57,18 +62,35 @@
     .prodSection {
         margin-left: 1rem;
     }
+
+    .mobileoverflow {
+        overflow: hidden;
+    }
+
+    .tagSection {
+        // position: absolute;
+        // bottom: 0;
+        height: 12rem;
+        width: 100%;
+        background-color: #061178;
+        margin-top: 5rem;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        // opacity: .7;
+        color: white;
+    }
 }
 
 
 .tagSection {
-    position: absolute;
-    bottom: 0;
-    height: 10rem;
+    // position: absolute;
+    // bottom: 0;
+    height: 12rem;
     width: 100%;
     background-color: #061178;
     padding-top: 2rem;
     padding-left: 3rem;
-    opacity: .7;
+    // opacity: .7;
     color: white;
 }
 
@@ -113,6 +135,8 @@
     letter-spacing: .4rem;
     width: 80%;
     margin-bottom: 1rem;
+    margin-left: -1rem;
+    margin-top: 1rem;
     border-bottom: 2px solid black;
 }
 
@@ -375,4 +399,307 @@
         justify-content: space-between;
         width: 90%;
     }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 900px) and (-webkit-device-pixel-ratio: 3) {
+    .logo {
+        font-size: .7rem;
+    }
+
+    .navtitle {
+        font-size: .5rem;
+    }
+
+    .cntcbuttn {
+        padding: 1rem;
+        font-size: .66rem;
+        text-align: center;
+    }
+
+    .profileTitle {
+        background-color: white;
+        color: black;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        width: 25%;
+        z-index: 2;
+        position: absolute;
+        top: 9%;
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        // display: none;
+    }
+
+    .details {
+        font-size: .8rem;
+        letter-spacing: .4rem;
+        width: 80%;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid black;
+    }
+
+    .detailsSection {
+        font-size: .6rem;
+        font-weight: bold;
+    }
+
+    .detailsSectionContent {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+    }
+
+    .detailscontet {
+        width: 35%;
+        height: 70%;
+        padding: .5rem;
+        padding-top: 10rem;
+        background-color: rgb(206, 201, 201);
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        padding-left: 1.5rem;
+        padding-bottom: 5rem;
+    }
+
+    .linespace {
+        line-height: 1.5rem;
+    }
+
+
+    .profileSection {
+        width: 60%;
+        height: 74%;
+        left: 40%;
+        position: absolute;
+        top: 19%;
+        padding-top: 13%;
+        overflow-y: scroll;
+    }
+
+
+    .profileSectionTitle {
+        font-size: 1rem;
+        margin-left: 3.5rem;
+    }
+
+
+    .profileSectionText {
+        font-size: .7rem;
+        letter-spacing: .09rem;
+        text-align: justify;
+        padding: 3rem;
+        padding-top: 2rem;
+        line-height: 1.5;
+    }
+
+    .jobTitle {
+        font-weight: bold;
+        font-size: .7rem;
+        padding-left: 3rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .dates {
+        padding-left: 3rem;
+        padding-top: .5rem;
+        font-size: .7rem;
+
+    }
+
+    .uniTitle {
+        font-weight: bold;
+        font-size: .7rem;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .refTitle {
+        font-weight: bold;
+        font-size: .7rem;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+}
+
+@media (min-device-height: 667px) and (min-device-width: 360px) and (-webkit-min-device-pixel-ratio: 3) {
+    .rotate_text {
+        color: white;
+        margin-bottom: .1rem;
+        margin-right: 0rem;
+        rotate: 1 1 0 35deg;
+        font-size: 2rem;
+        font-weight: bold;
+        animation: 1.3s ease-out 0s 1 slideInFromRight;
+    }
+
+    .background {
+        background-position: 50% 10%;
+        background-size: 100%;
+        padding-top: 6rem;
+    }
+
+    .tagSection {
+        // position: absolute;
+        // bottom: 0;
+        height: 15rem;
+        width: 100%;
+        background-color: #061178;
+        margin-top: 5rem;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        // opacity: .7;
+        color: white;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: .7rem;
+    }
+
+    .navtitle {
+        font-size: .5rem;
+    }
+
+    .cntcbuttn {
+        padding-top: .66rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: .66rem;
+        font-size: .5rem;
+        text-align: center;
+    }
+
+    .profileTitle {
+        background-color: white;
+        color: black;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        width: 25%;
+        z-index: 2;
+        position: absolute;
+        top: 9%;
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        // display: none;
+    }
+
+    .details {
+        font-size: 1rem;
+        letter-spacing: .4rem;
+        width: 80%;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid black;
+    }
+
+    .detailsSection {
+        font-size: .6rem;
+        font-weight: bold;
+    }
+
+    .detailsSectionContent {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+    }
+
+    .detailscontet {
+        width: 35%;
+        height: 70%;
+        padding: .5rem;
+        padding-top: 10rem;
+        background-color: rgb(206, 201, 201);
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        padding-left: 1.5rem;
+        padding-bottom: 5rem;
+    }
+
+    .linespace {
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+
+
+    .profileSection {
+        width: 60%;
+        height: 74%;
+        left: 40%;
+        position: absolute;
+        top: 19%;
+        padding-top: 13%;
+        overflow-y: scroll;
+    }
+
+
+    .profileSectionTitle {
+        font-size: .8rem;
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+
+
+    .profileSectionText {
+        font-size: .7rem;
+        letter-spacing: .09rem;
+        text-align: justify;
+        padding: 3rem;
+        padding-top: 2rem;
+        line-height: 1.5;
+    }
+
+    .jobTitle {
+        font-weight: bold;
+        font-size: .7rem;
+        padding-left: 3rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .dates {
+        padding-left: 3rem;
+        padding-top: .5rem;
+        font-size: .7rem;
+
+    }
+
+    .uniTitle {
+        font-weight: bold;
+        font-size: .7rem;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .refTitle {
+        font-weight: bold;
+        font-size: .7rem;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
 }

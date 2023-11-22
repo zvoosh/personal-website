@@ -9,16 +9,17 @@ import { Profile } from './components/Profile';
 function App() {
 
   return (
-    // <div style={{ width: '100vw', height: '100vh', background: 'blue' }}>DUSAN JE PICKA</div>
     <div className='workSpace'>
-      <div className='headerSpace'>
-        <HeaderPage />
-      </div>
-      <div className='contentSpace'>
-        <Routes>
-          <Route path="/profile" element={<Profile />} />
-          <Route path="" element={<NewHome />} />
-        </Routes>
+      <div className='justSpace'>
+        <div className='headerSpace'>
+          <HeaderPage />
+        </div>
+        <div className='contentSpace'>
+          <Routes>
+            <Route path="/profile" element={<Profile />} />
+            <Route path="" element={<NewHome />} />
+          </Routes>
+        </div>
       </div>
     </div>
   )
