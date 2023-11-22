@@ -584,21 +584,36 @@
         text-align: center;
     }
 
-    .profileTitle {
-        background-color: white;
-        color: black;
-        font-size: 1.5rem;
-        padding: 1rem 1.5rem 1rem 1.5rem;
-        width: 25%;
-        z-index: 2;
-        position: absolute;
-        top: 9%;
-        border: 1px solid black;
-        text-align: center;
-        margin-top: 1rem;
+    .mobileStyling {
         display: flex;
-        flex-direction: column;
-        // display: none;
+        flex-direction: row;
+    }
+
+    .profileTitle {
+        // background-color: white;
+        // color: black;
+        // font-size: 1.5rem;
+        // padding: 1rem 1.5rem 1rem 1.5rem;
+        // width: 25%;
+        // z-index: 2;
+        // position: absolute;
+        // top: 9%;
+        // border: 1px solid black;
+        // text-align: center;
+        // margin-top: 1rem;
+        // display: flex;
+        // flex-direction: column;
+        display: none;
+    }
+
+
+
+    .profilslika {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding: 2rem;
+        overflow: scroll;
     }
 
     .details {
@@ -621,16 +636,12 @@
     }
 
     .detailscontet {
-        width: 35%;
-        height: 70%;
-        padding: .5rem;
-        padding-top: 10rem;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
         background-color: rgb(206, 201, 201);
         display: flex;
         flex-direction: column;
-        overflow: scroll;
-        padding-left: 1.5rem;
-        padding-bottom: 5rem;
     }
 
     .linespace {
@@ -638,15 +649,12 @@
         font-size: .8rem;
     }
 
-
     .profileSection {
-        width: 60%;
-        height: 74%;
-        left: 40%;
-        position: absolute;
-        top: 19%;
+        width: 100%;
+        height: 100%;
         padding-top: 13%;
-        overflow-y: scroll;
+        position: static;
+        overflow: unset;
     }
 
 

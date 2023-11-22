@@ -1,9 +1,9 @@
 const Profile = () => {
     return (
         <div className="w-100 h-100" style={{ background: 'white' }}>
-            <div className="w-100 h-100 flex justify-center align-center flex-column">
+            <div className="w-100 h-100 flex justify-center align-center flex-column mobileStyling">
                 <div className="profileTitle">
-                    <div>DUŠAN ILIĆ</div>
+                    <div>DUŠANddd ILIĆ</div>
                     <div className="font-09 mt-1">FRONT END DEVELOPER</div>
                 </div>
                 <div className="profilslika">
