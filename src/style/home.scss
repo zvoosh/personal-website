@@ -121,24 +121,6 @@
     flex-direction: column;
 }
 
-.profilslika {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    padding: 2rem;
-    padding-top: 0rem;
-    padding-left: 5rem;
-}
-
-.details {
-    font-size: 2rem;
-    letter-spacing: .4rem;
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-left: -1rem;
-    margin-top: 1rem;
-    border-bottom: 2px solid black;
-}
 
 /* width */
 ::-webkit-scrollbar {
@@ -163,58 +145,6 @@
     background: rgb(100, 100, 100);
 }
 
-.detailscontet {
-    width: 35%;
-    height: 70%;
-    padding: .5rem;
-    padding-top: 10rem;
-    background-color: rgb(206, 201, 201);
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    padding-left: 3rem;
-    padding-bottom: 5rem;
-}
-
-.detailsSection {
-    font-size: .9rem;
-    font-weight: bold;
-}
-
-.detailsSectionContent {
-    margin-top: .4rem;
-    margin-bottom: .5rem;
-    font-weight: normal;
-}
-
-.profileSection {
-    // background-color: red;
-    width: 60%;
-    height: 60%;
-    left: 40%;
-    position: absolute;
-    top: 10%;
-    padding-top: 13%;
-    overflow-y: scroll;
-}
-
-.profileSectionTitle {
-    font-size: 2rem;
-    letter-spacing: .4rem;
-    width: 50%;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    border-bottom: 2px solid black;
-}
-
-.profileSectionText {
-    font-size: 1.3rem;
-    letter-spacing: .1rem;
-    text-align: justify;
-    padding: 4rem;
-    padding-top: 2rem;
-    line-height: 1.5;
-}
 
 .profileSectionText2 {
     font-size: 1.3rem;
@@ -223,40 +153,6 @@
     padding: 4rem;
     padding-top: 2rem;
     line-height: 1.5;
-}
-
-.jobTitle {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-left: 4rem;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
-
-.dates {
-    padding-left: 4rem;
-    padding-top: .5rem;
-}
-
-.uniTitle {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-left: 4rem;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
-
-.refTitle {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-left: 4rem;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
 }
 
 .contact-btn {
@@ -331,10 +227,6 @@
         overflow: scroll;
         padding-left: 1.5rem;
         padding-bottom: 5rem;
-    }
-
-    .linespace {
-        line-height: 1.5rem;
     }
 
 
