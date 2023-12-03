@@ -1,8 +1,6 @@
 @import "global.css";
 @import "menu.css";
 @import "spaces.scss";
-@import "fonts.scss";
-@import "general.scss";
 @import "colors.scss";
 @import "flex-box.scss";
-@import "home.scss";
+@import "initial.scss";
