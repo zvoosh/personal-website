@@ -1,46 +1,27 @@
-$red: red;
-$blue: blue;
-$yellow: yellow;
-$green: green;
-$brown: brown;
-$turquoise: turquoise;
-
 .bg {
-    &-red {
-        background-color: red;
-    }
-
     &-white {
         background-color: white;
     }
 
-    &-black {
-        background-color: black;
+    &-red {
+        background-color: #ff7b7b;
     }
 
     &-blue {
         background-color: blue;
     }
 
-    &-yellow {
-        background-color: yellow;
+    &-purple {
+        background-color: #6e07f3;
     }
 
-    &-green {
-        background-color: green;
-    }
-
-    &-brown {
-        background-color: brown;
-    }
-
-    &-turquoise {
-        background-color: turquoise;
+    &-cian {
+        background-color: #5BE9B9;
     }
 }
 
 .text {
-    &-blue {
-        color: blue
+    &-purple {
+        color: #6e07f3;
     }
 }

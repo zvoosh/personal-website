@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+
+
+@media only screen and (max-width: 767px) {
+    .text-center {
+        text-align: center;
+    }
+
+    .headBtn {
+        border-radius: 1rem;
+        font-family: "Hedvig Letters Sans", sans-serif;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .text-center {
+        text-align: center;
+    }
+
+    .headBtn {
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-family: "Hedvig Letters Sans", sans-serif;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .text-center {
+        text-align: center;
+    }
+
+    .headBtn {
+        border-radius: 1rem;
+        font-size: 2rem;
+        font-family: "Hedvig Letters Sans", sans-serif;
+    }
+}
+
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+    .text-center {
+        text-align: center;
+    }
+
+    .headBtn {
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        font-family: "Hedvig Letters Sans", sans-serif;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .text-center {
+        text-align: center;
+    }
+
+    .headBtn {
+        width: 15%;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        font-family: "Hedvig Letters Sans", sans-serif;
+    }
+}
+
+.animated {
+    animation: colorSwitch 2s ease infinite;
+}
+
+@keyframes colorSwitch {
+    0% {
+        background-color: #5BE9B9;
+    }
+
+    25% {
+        background-color: #ffbaba;
+    }
+
+    50% {
+        background-color: #ff7b7b;
+    }
+
+    75% {
+        background-color: #48ba94;
+    }
+
+    100% {
+        background-color: #5BE9B9;
+    }
+}

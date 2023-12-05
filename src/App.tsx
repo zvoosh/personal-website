@@ -1,27 +1,39 @@
-
+import { useEffect, useRef } from 'react';
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
+import { Header } from './components/Header';
 import { NewHome } from './components/NewHome';
-import { HeaderPage } from './layout/HeaderPage';
-import { Profile } from './components/Profile';
 
 
 function App() {
+  const welcomeDiv = document.getElementById('welcomeDiv');
+  useEffect(() => {
+    welcomeDiv?.classList.add('animated');
+  }, [welcomeDiv])
+
+
+  const scrollToTop = () => {
+    const targetDiv = document.getElementById('yourDivId');
+
+
+
+    if (targetDiv) {
+      targetDiv.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', // Scrolls to the top of the div
+      });
+    }
+  };
+
 
   return (
     <div className='workSpace'>
-      <div className='justSpace'>
-        <div className='headerSpace'>
-          <HeaderPage />
-        </div>
-        <div className='contentSpace'>
-          <Routes>
-            <Route path="/profile" element={<Profile />} />
-            <Route path="" element={<NewHome />} />
-          </Routes>
-        </div>
+      <div className='headerSpace'>
+        <Header fn={scrollToTop} />
       </div>
-    </div>
+      <div className='contentSpace'>
+        <NewHome />
+      </div>
+    </div >
   )
 }
 
