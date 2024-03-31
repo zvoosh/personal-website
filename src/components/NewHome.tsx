@@ -1,20 +1,27 @@
 import { FiLayers } from "react-icons/fi";
 import { GrVirtualMachine } from "react-icons/gr";
 import { FiTool } from "react-icons/fi";
+import { Button } from "antd";
 
 const NewHome = () => {
 
     return (
         <div className="w-100 h-100 generalWrap flex flex-column hedvig-font" id="scrollcomponenet" >
             <div className="bg-white w-100 h-100">
-                <div className="title" id="yourDivId">Frontend Developer & Gradiuation student</div>
-                <div className="subtitle">I develop simple and practical things as my proffesion and hobby</div>
-                <div className="flex justify-center marginForIcon backgroundSpace">
-                    <div className="circleIcon">
-                    </div>
-                </div>
                 <div className="computerBg">
+                <div className="title" id="yourDivId">Frontend Developer & Graduated Student</div>
+                <div className="flex justify-end">
+                <div className="blue-background">
+                <div className="subtitle">Hi, I'm Dusan and I develop full scalable websites and tools using React and many more other tehnologies!
+                <Button style={{border: '1px solid white', width: '45%',marginLeft: '30%',marginTop: "3%"}}>
+                    More!
+                </Button>
                 </div>
+                </div>
+                </div>
+                </div>
+                {/* <div className="computerBg">
+                </div> */}
                 <div className="welcomeSec">
                     <div className="m-1">
                         <div className="descriptionTitle">
