@@ -1,0 +1,14 @@
+.text-align{
+    &-center{
+        text-align: center;
+    }
+    &-end{
+        text-align: end;
+    }
+    &-justify{
+        text-align: justify;
+    }
+}
+.text-bold{
+    font-weight: bold;
+}

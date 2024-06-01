@@ -4,5 +4,6 @@
 @import "colors.scss";
 @import "flex-box.scss";
 @import "initial.scss";
-@import "homepage.scss";
 @import "header.scss";
+@import "newHome.scss";
+@import "general.scss";

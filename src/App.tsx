@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './App.css'
 import { Header } from './components/Header';
-import { NewHome } from './components/NewHome';
+import { NewHome } from './components/homeComponents/NewHome';
 
 
 function App() {
