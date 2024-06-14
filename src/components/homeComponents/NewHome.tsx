@@ -1,14 +1,14 @@
-import { CardComponent } from "./CardComponent";
-import { PersonComponent } from "./PersonComponent";
+import {CardComponent, EducationComponent, IntroComponent, PersonComponent} from '.';
 
 const NewHome = () => {
   return (
     <div className="w-100 h-100 bg-white">
       <div className="scrollComponent">
+        <div style={{paddingRight: "8rem", paddingLeft:"8rem"}}>
+        <IntroComponent />
         <PersonComponent />
         <CardComponent />
-        <div>
-          <div className="font-size-17 w-100 text-align-center">EDUCATION</div>
+        <EducationComponent/>
         </div>
       </div>
     </div>

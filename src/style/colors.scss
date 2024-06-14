@@ -20,7 +20,11 @@
     }
     
     &-green {
-        background-color: green;
+        background-color: rgb(88, 192, 88);
+    }
+    
+    &-gray {
+        background-color: rgb(140, 140, 140);
     }
 
     &-cian {
@@ -39,5 +43,17 @@
 .text {
     &-purple {
         color: #6e07f3;
+    }
+    &-gray {
+        color: rgb(140, 140, 140);
+    }
+    &-blackGray {
+        color: rgb(85, 84, 84);
+    }
+    &-cornBlue {
+        color: CornflowerBlue;
+    }
+    &-white {
+        color: white;
     }
 }

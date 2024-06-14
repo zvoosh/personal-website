@@ -12,3 +12,55 @@
 .text-bold{
     font-weight: bold;
 }
+.user-select {
+    user-select: none;
+}
+.cursor{
+    cursor: pointer;
+}
+
+.half-circle {
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    left: -13%;
+    top: 7.5%;
+    transform: rotate(90deg);
+    // z-index: -1;
+    // border-left: 1px solid orange;
+    // border-bottom: 1px solid  black;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius:200px;
+    background: CornflowerBlue;
+}
+
+.half-circle-reverse {
+    width: 8.75rem;
+    height: 6.875rem;
+    position: absolute;
+    left: -8%;
+    top: 55%;
+    transform: rotate(-90deg);
+    // z-index: -1;
+    // border-left: 1px solid orange;
+    // border-bottom: 1px solid  black;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background: white;
+}
+
+.half-circle-second {
+    width: 8.75rem;
+    height: 6.875rem;
+    position: absolute;
+    left: -11%;
+    top:10%;
+    transform: rotate(90deg);
+    // border-bottom: 1px solid black;
+    z-index: 2;
+    // border-left: 1px solid orange;
+    // border-bottom: 1px solid  black;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius:100px;
+    background: CornflowerBlue;
+  }

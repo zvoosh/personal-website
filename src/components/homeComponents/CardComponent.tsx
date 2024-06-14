@@ -20,8 +20,8 @@ const CardComponent =() =>{
 return (
     <div>
         <Divider />
-        <div className="font-size-17 w-100 text-align-center">SKILLS</div>
-        <Row gutter={16} className="mt-1 flex justify-around p-2">
+        <div className="font-size-17 pt-2 w-100 text-align-center">SKILLS</div>
+        <Row gutter={16} className="mt-1 pb-2 flex justify-around p-2">
           <div className="flex align-center">
             <span
               style={{
