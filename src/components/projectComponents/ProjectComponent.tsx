@@ -16,9 +16,9 @@ const ProjectComponent = () => {
           }}
         >
           <div className="mt-3">
-            <div className="p-2 font-size-18 pl-1">My Projects</div>
+            <div className="p-2 pl-1" style={{fontSize: "2.4rem"}}>My Projects</div>
             <div
-              className="pl-1 pr-1 font-size-11 text-align-justify flex align-center"
+              className="pl-1 pr-1 mb-2 font-size-13 text-align-justify flex align-center"
               style={{ height: "20vh" }}
             >
               Below are listed some of the projects I worked on my own during my
@@ -35,11 +35,11 @@ const ProjectComponent = () => {
               myself during University. Other projects I worked on were made
               during my university are showcased through my GPA.
             </div>
-            <div className="pl-1 font-size-11">
+            <div className="pl-1 font-size-13">
               A worthy mention would be my 1 year of proffesional experience at
               FactoryWW.
             </div>
-            <div className="pl-1 font-size-11 pt-1 mt-05">
+            <div className="pl-1 font-size-13 pt-1 mt-05">
               Link to Artificial Intelligence: <a
                 href="https://colab.research.google.com/drive/1hqhbojPlZkWETzeyZN3Yb4dKa0TQ48o7?usp=sharing"
                 target="_blank"
@@ -69,7 +69,7 @@ const ProjectComponent = () => {
           </div>
           <Divider />
           <div className="flex flex-row mt-5">
-            <div className="w-55 h-100">
+            <div className="w-45 h-100">
               <div
                 style={{ height: "50vh",userSelect: "none" }}
                 className="flex justify-center align-center flex-column"
@@ -78,42 +78,42 @@ const ProjectComponent = () => {
               </div>
             </div>
             <div
-              className="ml-3 w-45 h-100"
-              style={{ borderRadius: "2%", border: "1px solid black", color:"black" }}
+              className="w-50 h-100"
+              style={{ borderRadius: "2%", border: "1px solid black", color:"black", marginLeft: "8rem" }}
             >
               <div style={{ height: "50vh", position: "relative" }}>
                 <div className="half-circle-second" style={{background: "white" , borderBottom: "1px solid black"}}></div>
                 <div className="half-circle-reverse" style={{borderBottom: '1px solid black'}}></div>
                 <div className="w-100  m-3 ml-4">
-                  <div className="font-size-12">
-                    DEVELOPMENET AND BRIEF HISTORY OF CHINESE CULTURE
+                  <div className="font-size-13">
+                    THE DEVELOPMENET AND BRIEF HISTORY OF CHINESE CULTURE
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 mr-5 font-size-11">
                     This website is developed in purpose of showcasing Chinese
                     Culture and it's development thourgh the ages. It's design
                     resambles the classical Eastern design with modernized
                     content elements from other open-source outdated websites.
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 mr-5 font-size-11">
                     The website is divided in four main topics with spread
                     content based on age it was inventent in.
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 mr-5 font-size-11">
                     The website does not have a backend storage side. It is
                     composed of React.js and React.js libraries. All states are
                     kept in React.js technologies, for example Route state,
                     Variable state..
                   </div>
-                  <div className="mt-1 mr-5 ml-2">
+                  <div className="mt-1 mr-5 ml-2 font-size-11">
                     The idea to make such a project came from classes of the
                     subject I choose for my graduating thesees.
                   </div>
-                  <div className="mt-1 mr-5 ml-2">
+                  <div className="mt-1 mr-5 ml-2 font-size-11">
                     The project has it's following documentation of 30 pages,
                     covering Coding, Testing, UI Testing, User Requirements and
                     etc.
                   </div>
-              <div className="mt-2 ml-2">
+              <div className="mt-2 ml-2  font-size-11">
                 <a
                   href="https://zvoosh.github.io/Chinese-Cultural-Evolution/"
                   target="_blank"
@@ -127,7 +127,7 @@ const ProjectComponent = () => {
           </div>
           <Divider />
           <div className="flex flex-row">
-            <div className=" w-55 h-100">
+            <div className=" w-45 h-100">
               <div
                 style={{ height: "50vh",userSelect: "none" }}
                 className="flex justify-center align-center flex-column"
@@ -136,36 +136,36 @@ const ProjectComponent = () => {
               </div>
             </div>
             <div
-              className="ml-3 w-45 h-100"
-              style={{ borderRadius: "2%", background: "white" , border: "1px solid black"}}
+              className="ml-3 w-50 h-100"
+              style={{ borderRadius: "2%", background: "white" , border: "1px solid black" , marginLeft: "8rem" }}
             >
               <div style={{ height: "50vh", position: "relative" }}>
                 <div className="half-circle-second" style={{background: "white", borderBottom: '1px solid black'}}></div>
                 <div className="half-circle-reverse" style={{borderBottom: '1px solid black'}}></div>
                 <div className="w-100 m-3 ml-4">
-                  <div className="font-size-12">HOTEL APPLICATION</div>
-                  <div className="mt-1 mr-5">
+                  <div className="font-size-13">HOTEL APPLICATION</div>
+                  <div className="mt-1 mr-5 font-size-11">
                     This hotel application was made as a finals assignment for a
                     subject called Application Software Development.
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 mr-5 font-size-11">
                     The subject covers modeling methods, agile methods,
                     requirements analysis, ER diagrams, designing the system,
                     UML modelovanje, software implementation, software testing
                     and besides all documentation.
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 ml-2 mr-5 font-size-11">
                     The project has a backend side writen in Node.js and MongoDB
                     as for the frontend side it's built in Vue.js and styled
                     with Vuetify. Besides it's functions documentation is
                     provided for the project.
                   </div>
-                  <div className="mt-1 mr-5 ml-2">
+                  <div className="mt-1 mr-5 ml-2 font-size-11">
                     Application holds the hotels welcoming page, about page, a
                     page for showcasing rooms and their availability, a page for
                     auditoriums and a profile page
                   </div>
-                  <div className="mt-1 mr-5 ml-2">
+                  <div className="mt-1 mr-5 ml-2 font-size-11">
                     On the application the client can login, reserve rooms and
                     audiotoriums, and read about hotel and view images taken of
                     it's enterior.
@@ -176,7 +176,7 @@ const ProjectComponent = () => {
           </div>
           <Divider />
           <div className="flex flex-row">
-            <div className=" w-55 h-100">
+            <div className=" w-45 h-100">
               <div
                 style={{ height: "50vh",userSelect: "none" }}
                 className="flex justify-center align-center flex-column"
@@ -185,31 +185,31 @@ const ProjectComponent = () => {
               </div>
             </div>
             <div
-              className="ml-3 w-45 h-100"
-              style={{ borderRadius: "2%", background: "white" , border: "1px solid black" }}
+              className="ml-3 w-50 h-100"
+              style={{ borderRadius: "2%", background: "white" , border: "1px solid black", marginLeft: "8rem"  }}
             >
               <div style={{ height: "50vh", position: "relative" }}>
                 <div className="half-circle-second" style={{background: "white", borderBottom: '1px solid black'}}></div>
                 <div className="half-circle-reverse"style={{borderBottom: '1px solid black'}}></div>
                 <div className="w-100 m-3 ml-4">
-                  <div className="font-size-12">
+                  <div className="font-size-13">
                     AIPLANE TICKETS APPLICATION
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 mr-5 font-size-11">
                     Airplane Tickets websites was made in interest of showcasing
                     the RASA chatbot. Website has 3 pages and a login page and
                     is made with a simple design.
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 mr-5 font-size-11">
                     RASA chatbot greets the client and asks for a date to book a
                     flight, client anwsers and the chatbot gives a recomendation
                     for a flight and a link that leads to the flight.
                   </div>
-                  <div className="mt-1 mr-5">
+                  <div className="mt-1 mr-5 font-size-11">
                     The backend side of the application is written in Node.js.
                     As for the frontend side the technology used is React.js.
                   </div>
-                  <div className="mt-1 mr-5 ml-2">
+                  <div className="mt-1 mr-5 ml-2 font-size-11">
                     RASA chatbot is made of python scripts like actions, models,
                     etc.
                   </div>

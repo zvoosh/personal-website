@@ -18,8 +18,8 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
           <div className="flex align-center">
             
             <div
-              className="text-white font-size-14 pl-3 mr-3"
-              style={{ letterSpacing: ".2rem" }}
+              className="text-white font-size-18 pl-3 mr-3"
+              style={{ letterSpacing: ".2rem", userSelect: "none" }}
               >
               Dusan Ilic
             </div>
@@ -27,7 +27,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
           </div>
           <div className="flex">
             <div
-              className="m-1 text-white p-05 user-select cursor"
+              className="m-1 text-white p-1 font-size-12 user-select cursor"
               style={{ border: "1px solid white" }}
               onClick={() => {
                   handleNavigation("/");
@@ -36,7 +36,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
               Personal Information
             </div>
             <div
-              className="m-1 text-white p-05 user-select cursor"
+              className="m-1 text-white p-1 font-size-12 user-select cursor"
               style={{ border: "1px solid white" }}
               onClick={() => {
                   handleNavigation("/projects");
@@ -55,8 +55,8 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
                 style={{ textDecoration: "none", color: "black" }}
                 >
                 <FaLinkedin
-                  style={{ transform: "scale(1.4)" }}
-                  className="mr-05 text-white"
+                  style={{ transform: "scale(2)" }}
+                  className="mr-1 text-white"
                   />
               </a>
                   </div>
@@ -67,7 +67,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
                   style={{ textDecoration: "none", color: "black" }}
                   >
                 <MdEmail
-                  style={{ transform: "scale(1.4)" }}
+                  style={{ transform: "scale(2)" }}
                   className="mr-05 text-white"
                   />
                 </a>

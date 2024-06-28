@@ -53,6 +53,7 @@ return (
                 borderRadius: "20%",
                 padding: ".4rem",
                 border: "1px solid gray",
+                transform: "scale(1.5)"
               }}
               onClick={() => {
                 setIsIndex((prev: number): any => {
@@ -84,13 +85,17 @@ return (
                       <div style={{ marginRight: "1rem" }}>React.js</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none",   }}
                   headStyle={{
                     backgroundColor: primaryColor,
                     color: "white",
+                    width: "100%",
+                  }}
+                  bodyStyle={{
+                    padding: '2rem'
                   }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>1 year of proffesional experience</li>
                     <li>2+ years of educational development</li>
                     <li>3+ github repositories</li>
@@ -122,8 +127,11 @@ return (
                     backgroundColor:primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>3+ years of learning development</li>
                     <li>2 github repositories</li>
                     <li>2 highly graded University subject projects</li>
@@ -151,8 +159,11 @@ return (
                     backgroundColor:primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>3+ years of practical basic use</li>
                     <li>Multiple databases</li>
                   </ul>
@@ -182,8 +193,11 @@ return (
                     backgroundColor:primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>2 years of educational experiance</li>
                     <li>University subject based on Java programming in Spring Framework</li>
                     <li>University subject based on Java programming in Android Studio</li>
@@ -212,8 +226,11 @@ return (
                     backgroundColor:primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>3+ years of educational experiance</li>
                     <li>University proffesors highly enforce practicing SQL databases</li>
                     <li>Multiple University books covering storing data in SQL databases</li>
@@ -241,8 +258,11 @@ return (
                     backgroundColor:primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>One of my biggest University projects was in Angular</li>
                     <li>A whole subject practising UI methods using Angular</li>
                     <li>A video of this project presentation is on this website</li>
@@ -273,8 +293,11 @@ return (
                     backgroundColor:primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>2 years of educational experiance</li>
                     <li>4 separate University subjects futuring data science, data operations, data coding and AI</li>
                     <li>Google labs and python were used to distribute data using the knowledge of data science and methods of Machine Learning</li>
@@ -302,8 +325,11 @@ return (
                     backgroundColor:primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>2 years of educational experiance</li>
                     <li>4 separate University subjects futuring data science, data operations, data coding and AI</li>
                     <li>Google labs and python were used to distribute data using the knowledge of data science and methods of Machine Learning</li>
@@ -331,8 +357,11 @@ return (
                     backgroundColor: primaryColor,
                     color: "white",
                   }}
+                  bodyStyle={{
+                    padding: '2rem'
+                  }}
                 >
-                  <ul>
+                  <ul className="font-size-11">
                     <li>Probability and statistics first subject to teach about graph and data operations</li>
                     <li>Data coding 1 and 2 using python and data science to decipher coded data</li>
                     <li>The coded data had to be prepared for Machine Learning operators for decodation using the methods from previous subjects</li>
@@ -348,6 +377,7 @@ return (
                 borderRadius: "20%",
                 padding: ".4rem",
                 border: "1px solid gray",
+                transform: "scale(1.5)"
               }}
               onClick={() => {
                 setIsIndex((prev: number): any => {
