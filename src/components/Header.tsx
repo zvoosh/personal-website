@@ -2,20 +2,21 @@ import { useNavigate } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-const Header = () => {
+const Header = ({primaryColor}:{primaryColor: string}) => {
   const navigate = useNavigate();
 
   const handleNavigation = (path: string) => {
     navigate(path);
   };
 
+  
   return (
     <div className="bg-white w-100 h-100">
-      <div className="h-100 bg-cornBlue flex justify-start align-center">
+      <div className="h-100  flex justify-start align-center" style={{background: primaryColor}}>
         <div className="flex align-center w-100 justify-between">
             <div className="flex ">
-
           <div className="flex align-center">
+            
             <div
               className="text-white font-size-14 pl-3 mr-3"
               style={{ letterSpacing: ".2rem" }}

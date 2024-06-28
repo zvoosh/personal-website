@@ -13,14 +13,39 @@ import { SiJupyter } from "react-icons/si";
 import { SiAlwaysdata } from "react-icons/si";
 import { Divider } from "antd";
 
-const CardComponent =() =>{
+const CardComponent =({primaryColor}:{primaryColor: string}) =>{
   const array = [0,1,2];
   const [isIndex, setIsIndex] = useState<number>(0);
 
+  const circles = Array.from({ length: 20 }, (_, i) => {
+    const size = Math.floor(Math.random() * 20) + 10;
+    const positionX = Math.floor(Math.random() * 100);
+    const positionY = Math.floor(Math.random() * 100);
+    const color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+    return (
+      <div
+        key={i}
+        className="circle"
+        style={{
+          width: size,
+          height: size,
+          backgroundColor: color,
+          top: `${positionY}%`,
+          left: `${positionX}%`,
+          marginTop: "-2rem",
+          opacity: ".3"
+        }}
+      ></div>
+    );
+  });
 return (
-    <div>
+    <div style={{zIndex: "5"}}>
         <Divider />
         <div className="font-size-17 pt-2 w-100 text-align-center">SKILLS</div>
+        <div className="circle-container" style={{zIndex: "3", width: '100%', height: '100px'}}>
+          {circles}
+        </div>
         <Row gutter={16} className="mt-1 pb-2 flex justify-around p-2">
           <div className="flex align-center">
             <span
@@ -61,7 +86,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                 >
@@ -94,7 +119,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor:primaryColor,
                     color: "white",
                   }}
                 >
@@ -123,7 +148,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor:primaryColor,
                     color: "white",
                   }}
                 >
@@ -154,7 +179,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor:primaryColor,
                     color: "white",
                   }}
                 >
@@ -184,7 +209,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor:primaryColor,
                     color: "white",
                   }}
                 >
@@ -213,7 +238,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor:primaryColor,
                     color: "white",
                   }}
                 >
@@ -245,7 +270,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor:primaryColor,
                     color: "white",
                   }}
                 >
@@ -274,7 +299,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor:primaryColor,
                     color: "white",
                   }}
                 >
@@ -303,7 +328,7 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
                   headStyle={{
-                    backgroundColor: "CornflowerBlue",
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                 >

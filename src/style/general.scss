@@ -33,7 +33,15 @@
     border-bottom-right-radius:200px;
     background: CornflowerBlue;
 }
-
+.circle-container {
+    position: relative;
+    width: 100%;  
+    height: 100%;
+  }
+.circle {
+    position: absolute;
+    border-radius: 50%;
+  }
 .half-circle-reverse {
     width: 8.75rem;
     height: 6.875rem;

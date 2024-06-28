@@ -1,13 +1,13 @@
 import {CardComponent, EducationComponent, IntroComponent, PersonComponent} from '.';
 
-const NewHome = () => {
+const NewHome = ({primaryColor}:{primaryColor: string}) => {
   return (
     <div className="w-100 h-100 bg-white">
       <div className="scrollComponent">
         <div style={{paddingRight: "8rem", paddingLeft:"8rem"}}>
         <IntroComponent />
         <PersonComponent />
-        <CardComponent />
+        <CardComponent primaryColor={primaryColor}/>
         <EducationComponent/>
         </div>
       </div>

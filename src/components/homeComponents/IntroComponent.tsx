@@ -5,13 +5,41 @@ import { MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const IntroComponent = () => {
+
+  const circles = Array.from({ length: 20 }, (_, i) => {
+    const size = Math.floor(Math.random() * 20) + 10;
+    const positionX = Math.floor(Math.random() * 100);
+    const positionY = Math.floor(Math.random() * 80);
+    const color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+    return (
+      <div
+        key={i}
+        className="circle"
+        style={{
+          width: size,
+          height: size,
+          backgroundColor: color,
+          top: `${positionY}%`,
+          left: `${positionX}%`,
+          opacity: ".3"
+        }}
+      ></div>
+    );
+  });
+
+
   return (
     <div className="pt-2">
       <div className="flex flex-row">
         <div className="w-35 h-100 mt-2 flex align-center justify-center">
-          <img src={DusanIlicCV} width={300} style={{ borderRadius: "10%" }} />
+          <img src={DusanIlicCV} width={300} style={{ borderRadius: "10%", zIndex: '10' }} />
         </div>
         <div className="w-65 flex flex-column ">
+
+      <div className="circle-container">
+        {circles}
+      </div>
           <div>
             <div
               style={{
