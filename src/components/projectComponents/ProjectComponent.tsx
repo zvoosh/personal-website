@@ -3,7 +3,7 @@ import chinese01 from "../../assets/chinese-culture-01.png";
 import hotel01 from "../../assets/hotel-app-01.png";
 import plane01 from "../../assets/plane-app-01.png";
 
-const ProjectComponent = ({primaryColor}:{primaryColor: string}) => {
+const ProjectComponent = () => {
   return (
     <div className="w-100 h-100 bg-white">
       <div className="scrollComponent">

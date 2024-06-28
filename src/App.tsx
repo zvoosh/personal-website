@@ -25,7 +25,7 @@ function App() {
       <div className='contentSpace'>
         <Routes>
           <Route path='/' element={<NewHome primaryColor={primaryColor.purple.card}/>}></Route>
-          <Route path='/projects' element={<ProjectComponent primaryColor={primaryColor.purple.puzzle}/>}></Route>
+          <Route path='/projects' element={<ProjectComponent />}></Route>
         </Routes>
       </div>
     </div >
