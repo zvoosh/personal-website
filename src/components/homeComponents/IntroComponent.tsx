@@ -79,11 +79,11 @@ const IntroComponent = () => {
                     className="mr-05 text-cornBlue"
                   />{" "}
                   <a
-                    href="https://www.linkedin.com/in/dusan-ilic0997b4166/"
+                    href="https://www.linkedin.com/in/dusan-ilic-0997b4166/"
                     target="_blank"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    https://www.linkedin.com/in/dusan-ilic0997b4166/
+                    https://www.linkedin.com/in/dusan-ilic-0997b4166/
                   </a>{" "}
                 </div>
               </div>
