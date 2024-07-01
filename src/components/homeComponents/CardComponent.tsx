@@ -13,14 +13,14 @@ import { SiJupyter } from "react-icons/si";
 import { SiAlwaysdata } from "react-icons/si";
 import { Divider } from "antd";
 
-const CardComponent =({primaryColor}:{primaryColor: string}) =>{
-  const array = [0,1,2];
+const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
+  const array = [0, 1, 2];
   const [isIndex, setIsIndex] = useState<number>(0);
   const topDivRef = useRef<HTMLDivElement>(null);
 
   const scrollToTop = () => {
     if (topDivRef.current) {
-      topDivRef.current.scrollIntoView({ behavior: 'smooth' });
+      topDivRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -41,35 +41,49 @@ const CardComponent =({primaryColor}:{primaryColor: string}) =>{
           top: `${positionY}%`,
           left: `${positionX}%`,
           marginTop: "-2rem",
-          opacity: ".3"
+          opacity: ".3",
         }}
       ></div>
     );
   });
-return (
-    <div style={{zIndex: "5"}}>
-        <Divider />
-        <div className="font-size-17 pt-2 w-100 text-align-center ">SKILLS</div>
-        <div className="circle-container" style={{zIndex: "3", width: '100%', height: '100px'}}>
-          {circles}
+  return (
+    <div style={{ zIndex: "5" }}>
+      <Divider />
+      <div className="font-size-17 pt-2 w-100 text-align-center ">SKILLS</div>
+      <div
+        className="circle-container"
+        style={{ zIndex: "3", width: "100%", height: "100px" }}
+      >
+        {circles}
+      </div>
+      <Row
+        gutter={16}
+        className="mt-1 pb-2 flex justify-around p-2 tablet-flex"
+      >
+        <div className="flex align-center disable">
+          <span
+            className="card-arrow"
+            style={{
+              borderRadius: "20%",
+              marginRight: '2rem',
+              padding: ".4rem",
+              border: "1px solid gray",
+              transform: "scale(1.5)",
+            }}
+            onClick={() => {
+              setIsIndex((prev: number): any => {
+                if (prev === 0) {
+                  return array.length - 1;
+                } else if (prev > 0) {
+                  return prev - 1;
+                }
+              });
+            }}
+          >
+            <FaChevronLeft className="flex" />
+          </span>
         </div>
-        <Row gutter={16} className="mt-1 pb-2 flex justify-around p-2">
-          <div className="flex align-center disable">
-            <span className="card-arrow"
-              onClick={() => {
-                setIsIndex((prev: number): any => {
-                  if (prev === 0) {
-                    return array.length-1;
-                  } else if (prev > 0) {
-                    return prev - 1;
-                  }
-                });
-              }}
-            >
-              <FaChevronLeft className="flex" />
-            </span>
-          </div>
-          <div className="card-flex" ref={topDivRef}>
+        <div className="card-flex" ref={topDivRef}>
           {array[isIndex] === 0 && (
             <>
               <Col className="w-100 card-margin-2">
@@ -87,14 +101,14 @@ return (
                       <div style={{ marginRight: "1rem" }}>React.js</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none",   }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
                     backgroundColor: primaryColor,
                     color: "white",
                     width: "100%",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
@@ -109,7 +123,7 @@ return (
                 </Card>
               </Col>
               {/* style={{transform: 'scale(1.5)', marginLeft:"1rem", marginRight: "1rem", marginTop:'.2rem'}} */}
-              <Col  className="w-100 card-margin-2">
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -124,13 +138,13 @@ return (
                       <div style={{ marginRight: "1rem" }}>Node.js</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor:primaryColor,
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
@@ -156,13 +170,13 @@ return (
                       <div style={{ marginRight: "1rem" }}>MongoDB</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor:primaryColor,
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
@@ -173,14 +187,14 @@ return (
               </Col>
             </>
           )}
-          
+
           {array[isIndex] === 1 && (
             <>
               <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
-                      <FaJava 
+                      <FaJava
                         style={{
                           transform: "scale(1.5)",
                           marginLeft: "1rem",
@@ -191,20 +205,29 @@ return (
                       <div style={{ marginRight: "1rem" }}>Java</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor:primaryColor,
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
                     <li>2 years of educational experiance</li>
-                    <li>University subject based on Java programming in Spring Framework</li>
-                    <li>University subject based on Java programming in Android Studio</li>
-                    <li>University subject based on Java programming covering Testing libraries</li>
+                    <li>
+                      University subject based on Java programming in Spring
+                      Framework
+                    </li>
+                    <li>
+                      University subject based on Java programming in Android
+                      Studio
+                    </li>
+                    <li>
+                      University subject based on Java programming covering
+                      Testing libraries
+                    </li>
                   </ul>
                 </Card>
               </Col>
@@ -226,17 +249,23 @@ return (
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor:primaryColor,
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
                     <li>3+ years of educational experiance</li>
-                    <li>University proffesors highly enforce practicing SQL databases</li>
-                    <li>Multiple University books covering storing data in SQL databases</li>
+                    <li>
+                      University proffesors highly enforce practicing SQL
+                      databases
+                    </li>
+                    <li>
+                      Multiple University books covering storing data in SQL
+                      databases
+                    </li>
                     <li>Multiple subjects in demand of SQL database</li>
                   </ul>
                 </Card>
@@ -256,19 +285,23 @@ return (
                       <div style={{ marginRight: "1rem" }}>Angular</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor:primaryColor,
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
-                    <li>One of my biggest University projects was in Angular</li>
+                    <li>
+                      One of my biggest University projects was in Angular
+                    </li>
                     <li>A whole subject practising UI methods using Angular</li>
-                    <li>A video of this project presentation is on this website</li>
+                    <li>
+                      A video of this project presentation is on this website
+                    </li>
                   </ul>
                 </Card>
               </Col>
@@ -280,7 +313,7 @@ return (
                 <Card
                   title={
                     <div className="flex justify-center">
-                      <SiGooglecolab 
+                      <SiGooglecolab
                         style={{
                           transform: "scale(1.5)",
                           marginLeft: "1rem",
@@ -291,19 +324,26 @@ return (
                       <div style={{ marginRight: "1rem" }}>Google Labs</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor:primaryColor,
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
                     <li>2 years of educational experiance</li>
-                    <li>4 separate University subjects futuring data science, data operations, data coding and AI</li>
-                    <li>Google labs and python were used to distribute data using the knowledge of data science and methods of Machine Learning</li>
+                    <li>
+                      4 separate University subjects futuring data science, data
+                      operations, data coding and AI
+                    </li>
+                    <li>
+                      Google labs and python were used to distribute data using
+                      the knowledge of data science and methods of Machine
+                      Learning
+                    </li>
                     <li>Multiple open source projects and examples studied</li>
                   </ul>
                 </Card>
@@ -312,7 +352,7 @@ return (
                 <Card
                   title={
                     <div className="flex justify-center">
-                      <SiJupyter 
+                      <SiJupyter
                         style={{
                           transform: "scale(1.5)",
                           marginLeft: "1rem",
@@ -323,19 +363,26 @@ return (
                       <div style={{ marginRight: "1rem" }}>Project Jupyter</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
-                    backgroundColor:primaryColor,
+                    backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
                     <li>2 years of educational experiance</li>
-                    <li>4 separate University subjects futuring data science, data operations, data coding and AI</li>
-                    <li>Google labs and python were used to distribute data using the knowledge of data science and methods of Machine Learning</li>
+                    <li>
+                      4 separate University subjects futuring data science, data
+                      operations, data coding and AI
+                    </li>
+                    <li>
+                      Google labs and python were used to distribute data using
+                      the knowledge of data science and methods of Machine
+                      Learning
+                    </li>
                     <li>Multiple open source projects and examples studied</li>
                   </ul>
                 </Card>
@@ -344,7 +391,7 @@ return (
                 <Card
                   title={
                     <div className="flex justify-center">
-                      <SiAlwaysdata 
+                      <SiAlwaysdata
                         style={{
                           transform: "scale(1.5)",
                           marginLeft: "1rem",
@@ -355,55 +402,76 @@ return (
                       <div style={{ marginRight: "1rem" }}>Data Science</div>
                     </div>
                   }
-                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none"  }}
+                  style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
                   headStyle={{
                     backgroundColor: primaryColor,
                     color: "white",
                   }}
                   bodyStyle={{
-                    padding: '2rem'
+                    padding: "2rem",
                   }}
                 >
                   <ul className="font-size-11">
-                    <li>Probability and statistics first subject to teach about graph and data operations</li>
-                    <li>Data coding 1 and 2 using python and data science to decipher coded data</li>
-                    <li>The coded data had to be prepared for Machine Learning operators for decodation using the methods from previous subjects</li>
-                    <li>Artificial Intelligence was a subject of the last semestar wraping up all previously gained knowledge and adding proffesional knowledge</li>
+                    <li>
+                      Probability and statistics first subject to teach about
+                      graph and data operations
+                    </li>
+                    <li>
+                      Data coding 1 and 2 using python and data science to
+                      decipher coded data
+                    </li>
+                    <li>
+                      The coded data had to be prepared for Machine Learning
+                      operators for decodation using the methods from previous
+                      subjects
+                    </li>
+                    <li>
+                      Artificial Intelligence was a subject of the last semestar
+                      wraping up all previously gained knowledge and adding
+                      proffesional knowledge
+                    </li>
                   </ul>
                 </Card>
               </Col>
             </>
           )}
-          
-          </div>
-          <div className="flex align-center big-screen-disable">
-          <span className="card-arrow"
-            onClick={() => {
-              setIsIndex((prev: number): any => {
-                if (prev === 0) {
-                  scrollToTop()
-                  return array.length-1;
-                } else if (prev > 0) {
-                  scrollToTop()
-                  return prev - 1;
-                }
-              });
-            }}
-          >
-            <FaChevronLeft className="flex" />
-          </span>
         </div>
+        <div className="flex align-center justify-center mt-2 w-100 big-screen-disable">
+          <div className="flex align-center justify-between w-50 big-screen-disable">
+            <span
+              className="card-arrow"
+              style={{
+                borderRadius: "20%",
+                padding: ".4rem",
+                border: "1px solid gray",
+                transform: "scale(1.5)",
+              }}
+              onClick={() => {
+                setIsIndex((prev: number): any => {
+                  if (prev === 0) {
+                    scrollToTop();
+                    return array.length - 1;
+                  } else if (prev > 0) {
+                    scrollToTop();
+                    return prev - 1;
+                  }
+                });
+              }}
+            >
+              <FaChevronLeft className="flex" />
+            </span>
+          </div>
           <div className="flex align-center big-screen-disable">
             <span
               style={{
                 borderRadius: "20%",
                 padding: ".4rem",
                 border: "1px solid gray",
-                transform: "scale(1.5)"
+                transform: "scale(1.5)",
               }}
               onClick={() => {
                 setIsIndex((prev: number): any => {
-                  if(prev === array.length-1){
+                  if (prev === array.length - 1) {
                     scrollToTop();
                     return 0;
                   }
@@ -415,32 +483,32 @@ return (
               <FaChevronRight className="flex" />
             </span>
           </div>
-          <div className="flex align-center disable ">
-            <span
-              style={{
-                borderRadius: "20%",
-                padding: ".4rem",
-                border: "1px solid gray",
-                transform: "scale(1.5)"
-              }}
-              onClick={() => {
-                setIsIndex((prev: number): any => {
-                  if(prev === array.length-1){
-                    return 0;
-                  }
-                  return prev + 1;
-                });
-              }}
-            >
-              <FaChevronRight className="flex" />
-            </span>
-          </div>
-        </Row>
-        <Divider />
+        </div>
+        <div className="flex align-center disable ">
+          <span
+            style={{
+              borderRadius: "20%",
+              padding: ".4rem",
+              marginLeft: '2rem',
+              border: "1px solid gray",
+              transform: "scale(1.5)",
+            }}
+            onClick={() => {
+              setIsIndex((prev: number): any => {
+                if (prev === array.length - 1) {
+                  return 0;
+                }
+                return prev + 1;
+              });
+            }}
+          >
+            <FaChevronRight className="flex" />
+          </span>
+        </div>
+      </Row>
+      <Divider />
     </div>
-)
+  );
+};
 
-}
-
-
-export {CardComponent}
+export { CardComponent };

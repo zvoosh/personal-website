@@ -219,13 +219,13 @@ const ProjectComponent = () => {
 
           <div className="project-pc-disable">
           <Divider />
-          <div className="flex flex-column ">
+          <div className="flex flex-column project-padding-5">
             <div className="w-100 h-100">
               <div
                 style={{ height: "50vh",userSelect: "none" }}
-                className="flex justify-center align-center flex-column"
+                className="flex justify-center align-center flex-column project-margin-10"
               >
-                <img src={chinese01} alt="" style={{ height: "25vh" }} />
+                <img src={chinese01} alt="" className="project-image-height"  />
               </div>
             </div>
             <div
@@ -234,35 +234,35 @@ const ProjectComponent = () => {
             >
               <div style={{ height: "100%", position: "relative" }}>
                 <div className="w-100 m-1">
-                  <div className="font-size-12 mr-2 text-bold ">
+                  <div className="font-size-12 mr-2 text-bold project-font-title ">
                     THE DEVELOPMENET AND BRIEF HISTORY OF CHINESE CULTURE
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     This website is developed in purpose of showcasing Chinese
                     Culture and it's development thourgh the ages. It's design
                     resambles the classical Eastern design with modernized
                     content elements from other open-source outdated websites.
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     The website is divided in four main topics with spread
                     content based on age it was inventent in.
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     The website does not have a backend storage side. It is
                     composed of React.js and React.js libraries. All states are
                     kept in React.js technologies, for example Route state,
                     Variable state..
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     The idea to make such a project came from classes of the
                     subject I choose for my graduating thesees.
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     The project has it's following documentation of 30 pages,
                     covering Coding, Testing, UI Testing, User Requirements and
                     etc.
                   </div>
-                  <div className="mt-2 mr-2 font-size-11">
+                  <div className="mt-2 mr-2 font-size-11 project-font-paragraph">
                     <a
                       href="https://zvoosh.github.io/Chinese-Cultural-Evolution/"
                       target="_blank"
@@ -275,13 +275,13 @@ const ProjectComponent = () => {
             </div>
           </div>
           <Divider />
-          <div className="flex flex-column">
+          <div className="flex flex-column project-padding-5">
             <div className="w-100 h-100">
               <div
                 style={{ height: "50vh",userSelect: "none" }}
-                className="flex justify-center align-center flex-column"
+                className="flex justify-center align-center flex-column project-margin-10"
               >
-                <img src={hotel01} alt="" style={{ height: "25vh" }} />
+                <img src={hotel01} alt=""  className="project-image-height"  />
               </div>
             </div>
             <div
@@ -290,29 +290,29 @@ const ProjectComponent = () => {
             >
               <div style={{ height: "100%", position: "relative" }}>
                 <div className="w-100 m-1">
-                  <div className="font-size-12 text-bold">HOTEL APPLICATION</div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="font-size-12 text-bold project-font-title">HOTEL APPLICATION</div>
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     This hotel application was made as a finals assignment for a
                     subject called Application Software Development.
                   </div>
-                  <div className="mt-1  mr-2 font-size-11">
+                  <div className="mt-1  mr-2 font-size-11 project-font-paragraph">
                     The subject covers modeling methods, agile methods,
                     requirements analysis, ER diagrams, designing the system,
                     UML modelovanje, software implementation, software testing
                     and besides all documentation.
                   </div>
-                  <div className="mt-1  mr-2 font-size-11">
+                  <div className="mt-1  mr-2 font-size-11 project-font-paragraph">
                     The project has a backend side writen in Node.js and MongoDB
                     as for the frontend side it's built in Vue.js and styled
                     with Vuetify. Besides it's functions documentation is
                     provided for the project.
                   </div>
-                  <div className="mt-1  mr-2 font-size-11">
+                  <div className="mt-1  mr-2 font-size-11 project-font-paragraph">
                     Application holds the hotels welcoming page, about page, a
                     page for showcasing rooms and their availability, a page for
                     auditoriums and a profile page
                   </div>
-                  <div className="mt-1  mr-2 font-size-11">
+                  <div className="mt-1  mr-2 font-size-11 project-font-paragraph">
                     On the application the client can login, reserve rooms and
                     audiotoriums, and read about hotel and view images taken of
                     it's enterior.
@@ -322,13 +322,13 @@ const ProjectComponent = () => {
             </div>
           </div>
           <Divider />
-          <div className="flex flex-column">
+          <div className="flex flex-column project-padding-5">
             <div className="w-100 h-100">
               <div
                 style={{ height: "50vh",userSelect: "none" }}
-                className="flex justify-center align-center flex-column"
+                className="flex justify-center align-center flex-column project-margin-10"
               >
-                <img src={plane01} alt="" style={{ height: "25vh" }} />
+                <img src={plane01} alt=""  className="project-image-height"  />
               </div>
             </div>
             <div
@@ -337,24 +337,24 @@ const ProjectComponent = () => {
             >
               <div style={{ height: "100%", position: "relative" }}>
                 <div className="w-100 m-1">
-                  <div className="font-size-12 mr-2 text-bold">
+                  <div className="font-size-12 mr-2 text-bold project-font-title">
                     AIPLANE TICKETS APPLICATION
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     Airplane Tickets websites was made in interest of showcasing
                     the RASA chatbot. Website has 3 pages and a login page and
                     is made with a simple design.
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     RASA chatbot greets the client and asks for a date to book a
                     flight, client anwsers and the chatbot gives a recomendation
                     for a flight and a link that leads to the flight.
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     The backend side of the application is written in Node.js.
                     As for the frontend side the technology used is React.js.
                   </div>
-                  <div className="mt-1 mr-2 font-size-11">
+                  <div className="mt-1 mr-2 font-size-11 project-font-paragraph">
                     RASA chatbot is made of python scripts like actions, models,
                     etc.
                   </div>

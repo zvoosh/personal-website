@@ -77,7 +77,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
           </div>
           <div className="flex head-btns">
             <div
-              className="m-1 text-white p-1 font-size-12 user-select cursor "
+              className="m-1 text-white p-1 font-size-12 text-center flex align-center user-select cursor "
               style={{ border: "1px solid white" }}
               onClick={() => {
                   handleNavigation("/");
@@ -86,7 +86,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
               Personal Information
             </div>
             <div
-              className="m-1 text-white p-1 font-size-12 user-select cursor"
+              className="m-1 text-white p-1 font-size-12 text-center flex align-center user-select cursor"
               style={{ border: "1px solid white" }}
               onClick={() => {
                   handleNavigation("/projects");

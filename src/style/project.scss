@@ -24,10 +24,43 @@
     .project-margin-top-3{
         margin-top: 1rem;
     }
-    
+    .project-image-height{
+        height: 25vh;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .project-title{
+        padding: 2rem;
+        padding-left: .5rem;
+        font-size: 2rem;
+    }
+    .project-page-contain{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .project-mobile-disable{
+        display: none;
+    }
+    .project-padding-text{
+        padding-right: 1rem;
+        padding-left: .5rem;
+    }
+    .project-font-paragraph{
+        font-size: 1.2rem;
+    }
+    .project-font-title{
+        font-size: 1.4rem;
+    }
+    .project-margin-top-3{
+        margin-top: 1rem;
+    }
+    .project-image-height{
+        height: 30vh;
+    }
 }
 
 
@@ -36,7 +69,45 @@
 
 
 
-@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+    .project-title{
+        padding: 2rem;
+        padding-left: .5rem;
+        font-size: 2rem;
+    }
+    .project-page-contain{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .project-mobile-disable{
+        display: none;
+    }
+    .project-padding-text{
+        padding-right: 1rem;
+        padding-left: .5rem;
+    }
+    .project-font-paragraph{
+        font-size: 1.2rem;
+    }
+    .project-font-title{
+        font-size: 1.5rem;
+    }
+    .project-margin-top-3{
+        margin-top: 1rem;
+    }
+    .project-image-height{
+        height: 60vh;
+        margin-top: 10rem;
+    }
+    .project-margin-10{
+        margin-bottom: 15rem;
+    }
+    .project-padding-5{
+        padding: 5rem;
+    }
 }
 
 @media only screen and (min-width: 1441px) {

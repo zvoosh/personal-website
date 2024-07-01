@@ -17,8 +17,8 @@ const EducationComponent = () =>{
               graduating thesis covered Chinese culture presented as a Internet
               Website using the technology React. I graduated with an average
               score of 8.40 on a scale to 10, while on the scale to 4 the number is converted to 3.36.
-              <div className="mobile-font-paragraph">
-                Link to my thesis website: <a href="https://zvoosh.github.io/Chinese-Cultural-Evolution/#/" target="_blank">https://zvoosh.github.io/Chinese-Cultural-Evolution/#/</a>
+              <div className="mobile-font-paragraph ">
+                Link to my thesis website:<a href="https://zvoosh.github.io/Chinese-Cultural-Evolution/#/" target="_blank">https://zvoosh.github.io/Chinese-Cultural-Evolution/#/</a>
                 </div>
             </div>
             <div className="font-size-16 pt-3 pb-1 text-blackGray person-padding-title  mobile-under-title-description mobile-font-paragraph mobile-padding-text">High School graduate</div>

@@ -30,7 +30,7 @@ const IntroComponent = () => {
   return (
     <div className="pt-2">
       <div className="flexing-box">
-        <div className=" image-hold">
+        <div className="image-hold">
           <img
             src={DusanIlicCV}
             width={300}
