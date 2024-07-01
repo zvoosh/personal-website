@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Card, Col, Row } from "antd";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
@@ -16,6 +16,13 @@ import { Divider } from "antd";
 const CardComponent =({primaryColor}:{primaryColor: string}) =>{
   const array = [0,1,2];
   const [isIndex, setIsIndex] = useState<number>(0);
+  const topDivRef = useRef<HTMLDivElement>(null);
+
+  const scrollToTop = () => {
+    if (topDivRef.current) {
+      topDivRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const circles = Array.from({ length: 20 }, (_, i) => {
     const size = Math.floor(Math.random() * 20) + 10;
@@ -42,19 +49,13 @@ const CardComponent =({primaryColor}:{primaryColor: string}) =>{
 return (
     <div style={{zIndex: "5"}}>
         <Divider />
-        <div className="font-size-17 pt-2 w-100 text-align-center">SKILLS</div>
+        <div className="font-size-17 pt-2 w-100 text-align-center ">SKILLS</div>
         <div className="circle-container" style={{zIndex: "3", width: '100%', height: '100px'}}>
           {circles}
         </div>
         <Row gutter={16} className="mt-1 pb-2 flex justify-around p-2">
-          <div className="flex align-center">
-            <span
-              style={{
-                borderRadius: "20%",
-                padding: ".4rem",
-                border: "1px solid gray",
-                transform: "scale(1.5)"
-              }}
+          <div className="flex align-center disable">
+            <span className="card-arrow"
               onClick={() => {
                 setIsIndex((prev: number): any => {
                   if (prev === 0) {
@@ -68,9 +69,10 @@ return (
               <FaChevronLeft className="flex" />
             </span>
           </div>
+          <div className="card-flex" ref={topDivRef}>
           {array[isIndex] === 0 && (
             <>
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -107,7 +109,7 @@ return (
                 </Card>
               </Col>
               {/* style={{transform: 'scale(1.5)', marginLeft:"1rem", marginRight: "1rem", marginTop:'.2rem'}} */}
-              <Col span={7}>
+              <Col  className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -139,7 +141,7 @@ return (
                   </ul>
                 </Card>
               </Col>
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -171,9 +173,10 @@ return (
               </Col>
             </>
           )}
+          
           {array[isIndex] === 1 && (
             <>
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -206,7 +209,7 @@ return (
                 </Card>
               </Col>
               {/* style={{transform: 'scale(1.5)', marginLeft:"1rem", marginRight: "1rem", marginTop:'.2rem'}} */}
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -238,7 +241,7 @@ return (
                   </ul>
                 </Card>
               </Col>
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -273,7 +276,7 @@ return (
           )}
           {array[isIndex] === 2 && (
             <>
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -305,7 +308,7 @@ return (
                   </ul>
                 </Card>
               </Col>
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -337,7 +340,7 @@ return (
                   </ul>
                 </Card>
               </Col>
-              <Col span={7}>
+              <Col className="w-100 card-margin-2">
                 <Card
                   title={
                     <div className="flex justify-center">
@@ -371,7 +374,48 @@ return (
               </Col>
             </>
           )}
-          <div className="flex align-center">
+          
+          </div>
+          <div className="flex align-center big-screen-disable">
+          <span className="card-arrow"
+            onClick={() => {
+              setIsIndex((prev: number): any => {
+                if (prev === 0) {
+                  scrollToTop()
+                  return array.length-1;
+                } else if (prev > 0) {
+                  scrollToTop()
+                  return prev - 1;
+                }
+              });
+            }}
+          >
+            <FaChevronLeft className="flex" />
+          </span>
+        </div>
+          <div className="flex align-center big-screen-disable">
+            <span
+              style={{
+                borderRadius: "20%",
+                padding: ".4rem",
+                border: "1px solid gray",
+                transform: "scale(1.5)"
+              }}
+              onClick={() => {
+                setIsIndex((prev: number): any => {
+                  if(prev === array.length-1){
+                    scrollToTop();
+                    return 0;
+                  }
+                  scrollToTop();
+                  return prev + 1;
+                });
+              }}
+            >
+              <FaChevronRight className="flex" />
+            </span>
+          </div>
+          <div className="flex align-center disable ">
             <span
               style={{
                 borderRadius: "20%",

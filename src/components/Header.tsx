@@ -1,9 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { CiMenuBurger } from "react-icons/ci";
+import { useState } from "react";
 
 const Header = ({primaryColor}:{primaryColor: string}) => {
   const navigate = useNavigate();
+
+  const [isNavigate, setIsNavigate] = useState<boolean>(false);
 
   const handleNavigation = (path: string) => {
     navigate(path);
@@ -16,18 +20,64 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
         <div className="flex align-center w-100 justify-between">
             <div className="flex ">
           <div className="flex align-center">
-            
+            <div className="burger" onClick={()=>{
+                setIsNavigate((prev: any)=>{
+                  return !prev;
+                })
+            }}>
+              <CiMenuBurger style={{transform: "scale(1.6)", marginLeft: "1rem", color: "white"}}/>
+            </div>
+            {isNavigate && (
+            <div className="nav">
+            <div className="burger" style={{position:"absolute", left: ".5%", top:"49.5%"}} onClick={()=>{
+                setIsNavigate((prev: any)=>{
+                  return !prev;
+                })
+            }}>
+              <CiMenuBurger style={{transform: "scale(1.6)", marginLeft: "1rem", color: "white"}}/>
+            </div>
+
+            <div className="flex flex-column">
             <div
-              className="text-white font-size-18 pl-3 mr-3"
+              className="text-white font-size-18 pl-4 mr-3"
+              style={{ letterSpacing: ".2rem", userSelect: "none" }}
+              >
+              Dusan Ilic
+            </div>
+            <div
+              className="m-1 text-white p-1 font-size-12 user-select cursor "
+              style={{ border: "1px solid white" }}
+              onClick={() => {
+                  handleNavigation("/");
+                  setIsNavigate(false);
+                  }}
+                  >
+              Personal Information
+            </div>
+            <div
+              className="ml-1 mr-1 text-white p-1 font-size-12 user-select cursor"
+              style={{ border: "1px solid white" }}
+              onClick={() => {
+                  handleNavigation("/projects");
+                  setIsNavigate(false);
+                  }}
+                  >
+              Projects
+            </div>
+            </div>
+            </div>
+            )}
+            <div
+              className="text-white font-size-18 pl-4 mr-3"
               style={{ letterSpacing: ".2rem", userSelect: "none" }}
               >
               Dusan Ilic
             </div>
             
           </div>
-          <div className="flex">
+          <div className="flex head-btns">
             <div
-              className="m-1 text-white p-1 font-size-12 user-select cursor"
+              className="m-1 text-white p-1 font-size-12 user-select cursor "
               style={{ border: "1px solid white" }}
               onClick={() => {
                   handleNavigation("/");
@@ -46,7 +96,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
             </div>
           </div>
                 </div>
-                <div className="flex">
+                <div className="flex  head-btns">
 
                 <div className="ml-2" style={{ transform: "scale(1.2)" }}>
               <a
