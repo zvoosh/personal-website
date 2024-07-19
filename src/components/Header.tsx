@@ -20,7 +20,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
         <div className="flex align-center w-100 justify-between">
             <div className="flex ">
           <div className="flex align-center">
-            <div className="burger" onClick={()=>{
+            <div className="burger burger-disable" onClick={()=>{
                 setIsNavigate((prev: any)=>{
                   return !prev;
                 })

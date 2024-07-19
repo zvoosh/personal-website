@@ -67,6 +67,10 @@
     .text-center {
         text-align: center;
     }
+    
+    .burger-disable{
+        display: none;
+    }
 
     .headBtn {
         border-radius: 1rem;
@@ -82,6 +86,10 @@
         text-align: center;
     }
 
+    .burger-disable{
+        display: none;
+    }
+
     .headBtn {
         border-radius: 1rem;
         font-size: 1.4rem;
@@ -92,6 +100,10 @@
 @media only screen and (min-width: 1441px) {
     .text-center {
         text-align: center;
+    }
+
+    .burger-disable{
+        display: none;
     }
 
     .headBtn {
