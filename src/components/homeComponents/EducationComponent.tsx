@@ -16,7 +16,7 @@ const EducationComponent = () =>{
               Artificial Intelligence and many more of my interests. My
               graduating thesis covered Chinese culture presented as a Internet
               Website using the technology React. I graduated with an average
-              score of 8.40 on a scale to 10, while on the scale to 4 the number is converted to 3.36.
+              score of 8.31 on a scale to 10, while on the scale to 4 the number is converted to 3.324.
               <div className="mobile-font-paragraph ">
                 Link to my thesis website:<a href="https://zvoosh.github.io/Chinese-Cultural-Evolution/#/" target="_blank">https://zvoosh.github.io/Chinese-Cultural-Evolution/#/</a>
                 </div>

@@ -71,14 +71,17 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
               transform: "scale(1.5)",
             }}
             onClick={() => {
-              setIsIndex((prev: number): any => {
+              setIsIndex((prev: number): number => { 
                 if (prev === 0) {
                   return array.length - 1;
                 } else if (prev > 0) {
                   return prev - 1;
+                } else {
+                  return prev; 
                 }
               });
             }}
+            
           >
             <FaChevronLeft className="flex" />
           </span>
@@ -167,7 +170,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                           marginTop: ".2rem",
                         }}
                       />
-                      <div style={{ marginRight: "1rem" }}>MongoDB</div>
+                      <div style={{ marginRight: "1rem" }}>Flask</div>
                     </div>
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
@@ -180,8 +183,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                   }}
                 >
                   <ul className="font-size-11">
-                    <li>3+ years of practical basic use</li>
-                    <li>Multiple databases</li>
+                    <li>Udemy certified course finished</li>
                   </ul>
                 </Card>
               </Col>
@@ -191,10 +193,10 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
           {array[isIndex] === 1 && (
             <>
               <Col className="w-100 card-margin-2">
-                <Card
+              <Card
                   title={
                     <div className="flex justify-center">
-                      <FaJava
+                      <FaAngular
                         style={{
                           transform: "scale(1.5)",
                           marginLeft: "1rem",
@@ -202,7 +204,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                           marginTop: ".2rem",
                         }}
                       />
-                      <div style={{ marginRight: "1rem" }}>Java</div>
+                      <div style={{ marginRight: "1rem" }}>Angular</div>
                     </div>
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
@@ -215,18 +217,12 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                   }}
                 >
                   <ul className="font-size-11">
-                    <li>2 years of educational experiance</li>
                     <li>
-                      University subject based on Java programming in Spring
-                      Framework
+                      One of my biggest University projects was in Angular
                     </li>
+                    <li>A whole subject practising UI methods using Angular</li>
                     <li>
-                      University subject based on Java programming in Android
-                      Studio
-                    </li>
-                    <li>
-                      University subject based on Java programming covering
-                      Testing libraries
+                      Currently learning from Udemy licenced course
                     </li>
                   </ul>
                 </Card>
@@ -271,10 +267,11 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                 </Card>
               </Col>
               <Col className="w-100 card-margin-2">
-                <Card
+                
+              <Card
                   title={
                     <div className="flex justify-center">
-                      <FaAngular
+                      <FaJava
                         style={{
                           transform: "scale(1.5)",
                           marginLeft: "1rem",
@@ -282,7 +279,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                           marginTop: ".2rem",
                         }}
                       />
-                      <div style={{ marginRight: "1rem" }}>Angular</div>
+                      <div style={{ marginRight: "1rem" }}>Java</div>
                     </div>
                   }
                   style={{ boxShadow: "0px 0px 10px gray", userSelect: "none" }}
@@ -295,12 +292,18 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                   }}
                 >
                   <ul className="font-size-11">
+                    <li>2 years of educational experiance</li>
                     <li>
-                      One of my biggest University projects was in Angular
+                      University subject based on Java programming in Spring
+                      Framework
                     </li>
-                    <li>A whole subject practising UI methods using Angular</li>
                     <li>
-                      A video of this project presentation is on this website
+                      University subject based on Java programming in Android
+                      Studio
+                    </li>
+                    <li>
+                      University subject based on Java programming covering
+                      Testing libraries
                     </li>
                   </ul>
                 </Card>
@@ -447,16 +450,17 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                 transform: "scale(1.5)",
               }}
               onClick={() => {
-                setIsIndex((prev: number): any => {
+                setIsIndex((prev: number): number => { 
                   if (prev === 0) {
-                    scrollToTop();
                     return array.length - 1;
                   } else if (prev > 0) {
-                    scrollToTop();
                     return prev - 1;
+                  } else {
+                    return prev; 
                   }
                 });
               }}
+              
             >
               <FaChevronLeft className="flex" />
             </span>
@@ -470,7 +474,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                 transform: "scale(1.5)",
               }}
               onClick={() => {
-                setIsIndex((prev: number): any => {
+                setIsIndex((prev: number) => {
                   if (prev === array.length - 1) {
                     scrollToTop();
                     return 0;
@@ -494,7 +498,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
               transform: "scale(1.5)",
             }}
             onClick={() => {
-              setIsIndex((prev: number): any => {
+              setIsIndex((prev: number) => {
                 if (prev === array.length - 1) {
                   return 0;
                 }
