@@ -1,4 +1,4 @@
-import DusanIlicCV from "../../assets/Dusan_Ilic_CV.jpg";
+import DusanIlicCV from "../../assets/DusanIlicCV.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";

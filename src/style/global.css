@@ -1,7 +1,11 @@
-html {
-    background-color: red;
-}
-
 a {
-    color: rebeccapurple;
+  color: rebeccapurple;
+}
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #000;
 }
