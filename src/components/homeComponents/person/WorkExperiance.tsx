@@ -45,11 +45,11 @@ const WorkExperiance = () => {
   }, [activeWorkplace, fade]);
 
   return (
-    <div style={{ background: "#DAF7A6", borderRadius: "10px" }}>
-      <div className="p-3">
+    <div style={{ background: "#DAF7A6", borderRadius: "10px", width: '99%', padding: "1rem 0 1rem 0" }}>
+      <div className="person-padding-3">
         <div className="font-size-18 pb-2 person-padding-title mobile-padding-text flex justify-between">
           <div>WORK EXPERIENCE</div>
-          <div className="flex align-center" style={{ userSelect: "none" }}>
+          <div className="flex align-center mobile-size" style={{ userSelect: "none" }}>
             <div
               style={{ cursor: "pointer" }}
               onClick={() => {

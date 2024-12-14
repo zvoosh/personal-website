@@ -9,6 +9,12 @@
   .disable {
     display: none;
   }
+  
+  .mobile-size{
+    transform: scale(.7);
+    // margin-left: 1rem;
+  }
+
   .flexing-box {
     display: flex;
     flex-direction: column;
@@ -38,8 +44,11 @@
     padding: 2rem;
   }
   .page-paddings {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .person-padding-3 {
+    padding: 0rem;
   }
   .info-cont {
     width: 100%;
@@ -107,6 +116,19 @@
   .flexing-box {
     display: flex;
     flex-direction: row;
+  }
+
+  .mobile-size{
+    transform: scale(.8);
+  }
+
+  .person-padding-3 {
+    padding: 1rem;
+  }
+
+  .page-paddings {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .image-hold {
     width: 35%;
@@ -193,6 +215,11 @@
     display: flex;
     flex-direction: row;
   }
+
+  .person-padding-3 {
+    padding: 3rem;
+  }
+
   .image-hold {
     width: 35%;
     height: 100%;
@@ -275,6 +302,10 @@
 @media only screen and (min-width: 1441px) {
   .homeIntroPerson {
     height: 100vh;
+  }
+
+  .person-padding-3{
+    padding: 3rem
   }
 
   .image-hold {

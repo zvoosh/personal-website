@@ -1,7 +1,7 @@
 const PersonalInformation = () => {
   return (
     <div className="pt-2 flex justify-center align-center" style={{background:"#FFFBCC", borderRadius: "10px" }}>
-      <div className="p-3 padding-0" >
+      <div className="person-padding-3 padding-0" >
         <div className="font-size-18 pb-1 mobile-padding-text">
           PERSONAL INFORMATION
         </div>

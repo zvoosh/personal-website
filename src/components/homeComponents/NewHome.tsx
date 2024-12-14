@@ -6,6 +6,7 @@ import createIntersectionObserver from "../../functions/observer";
 
 const NewHome = ({ primaryColor }: { primaryColor: string }) => {
   const elementRef = useRef<HTMLDivElement>(null);
+  const educationRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleIntersect = (element: Element) => {
       element.classList.add("in-view");
@@ -14,9 +15,15 @@ const NewHome = ({ primaryColor }: { primaryColor: string }) => {
     if (elementRef.current) {
       observer.observe(elementRef.current);
     }
+    if (educationRef.current) {
+      observer.observe(educationRef.current);
+    }
     return () => {
       if (elementRef.current) {
         observer.unobserve(elementRef.current);
+      }
+      if (educationRef.current) {
+        observer.unobserve(educationRef.current);
       }
     };
   }, []);
@@ -39,12 +46,10 @@ const NewHome = ({ primaryColor }: { primaryColor: string }) => {
           >
             <WorkExperiance />
           </div>
-          {/* <div className="flex w-100 h-100 pt-2 pb-2 justify-center">
-            <div className="w-100 p-2 flex flex-column  justify-center padding-0"> */}
-          {/* </div>
-          </div> */}
           <CardComponent primaryColor={primaryColor} />
-          <EducationComponent />
+          <div ref={educationRef} className="transition-element">
+            <EducationComponent />
+          </div>
         </div>
       </div>
     </div>
