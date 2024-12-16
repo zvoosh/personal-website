@@ -51,29 +51,6 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
     }
   };
 
-  // const circles = Array.from({ length: 20 }, (_, i) => {
-  //   const size = Math.floor(Math.random() * 20) + 10;
-  //   const positionX = Math.floor(Math.random() * 100);
-  //   const positionY = Math.floor(Math.random() * 100);
-  //   const color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-
-  //   return (
-  //     <div
-  //       key={i}
-  //       className="circle"
-  //       style={{
-  //         width: size,
-  //         height: size,
-  //         backgroundColor: color,
-  //         top: `${positionY}%`,
-  //         left: `${positionX}%`,
-  //         marginTop: "-2rem",
-  //         opacity: ".3",
-  //       }}
-  //     ></div>
-  //   );
-  // });
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCircles(generateCircles());

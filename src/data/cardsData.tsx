@@ -39,6 +39,8 @@ const skillsOne = [
         <li>University thesis written in React.js</li>{" "}
         <li>Finished Udemy certified course</li>{" "}
         <li>Integrated React libraries experience</li>{" "}
+        <li>Read a book on React.js</li>
+        <li><a href="https://drive.google.com/file/d/1RyUHuNSFy9zbOc4DtYFRc7kd2jAtMzYm/view?usp=drive_link" target="_blank" download style={{textDecoration: "underline"}}>Certificat</a></li>
       </ul>
     ),
     favicon: (
@@ -103,6 +105,7 @@ const skillsOne = [
       <ul className="font-size-11">
         {" "}
         <li>Udemy certified course finished</li>{" "}
+        <li><a href="https://drive.google.com/file/d/1RoZ6kyRX-plMlY9GHXkLVKH0fXBd3vug/view?usp=drive_link" target="_blank" download style={{textDecoration: "underline"}}>Certificat</a></li>
       </ul>
     ),
     favicon: (

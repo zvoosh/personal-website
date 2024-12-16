@@ -11,29 +11,9 @@ const ProjectComponent = () => {
           className="project-page-contain"
         >
           <div className=" project-margin-top-3">
-            <div className="project-title ">My Projects</div>
-            <div
-              className="pl-1 pr-1 mb-2 font-size-13 text-align-justify flex align-center project-intro-text-height project-font-paragraph project-padding-text"
-            >
-              Below are listed some of the projects I worked on my own during my
-              tenure 5 years of university student experience. All projects are
-              made during my time on university in different technologies using
-              React, Vue, Angular, Node, Spring, Mongodb and SQL. The listed
-              examples are covering the subjets such as Web development, User
-              Interfaces, Java Programming Language, and other sub-subjects.
-              Besides the listed examples there were projects including Python
-              scripts for Data Science, Virtual Machine scripts, Cloud
-              programming, Cryptology one and two and Angular project that
-              aren't listen below. Some links for such subjects will be provided
-              below. Below are only web development projects I worked on by
-              myself during University. Other projects I worked on were made
-              during my university are showcased through my GPA.
-            </div>
-            <div className="pl-1 font-size-13 project-intro-text-height project-font-paragraph project-padding-text">
-              A worthy mention would be my 1 year of proffesional experience at
-              FactoryWW.
-            </div>
-            <div className="pl-1 font-size-13 pt-1 mt-05 project-intro-text-height project-font-paragraph project-padding-text">
+            <div className="project-title">My Projects</div>
+            
+            <div className="pl-1 font-size-13 pt-1  project-intro-text-height project-font-paragraph project-padding-text">
               Link to Artificial Intelligence: <a
                 href="https://colab.research.google.com/drive/1hqhbojPlZkWETzeyZN3Yb4dKa0TQ48o7?usp=sharing"
                 target="_blank"

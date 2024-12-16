@@ -31,6 +31,13 @@ const EducationComponent = () =>{
               <div>Elementary School of "Vladislav Ribnikar", Belgrade</div>
               <div>2006 - 2014</div>
             </div>
+            <div className="font-size-16 pt-3 pb-1 text-blackGray person-padding-title  mobile-under-title-description mobile-font-paragraph mobile-padding-text">Certificates</div>
+            <div className="flex justify-between font-size-12 pt-1 pb-1 w-100 text-bold person-padding-title person-flex mobile-padding-text mobile-under-title">
+              <div><a href="https://drive.google.com/file/d/1RyUHuNSFy9zbOc4DtYFRc7kd2jAtMzYm/view?usp=drive_link" target="_blank">React - The Complete Guide 2023</a></div>
+            </div>
+            <div className="flex justify-between font-size-12 pt-1 pb-1 w-100 text-bold person-padding-title person-flex mobile-padding-text mobile-under-title">
+            <div><a href="https://drive.google.com/file/d/1RoZ6kyRX-plMlY9GHXkLVKH0fXBd3vug/view?usp=drive_link" target="_blank">REST APIs with Flask and Python in 2024</a></div>
+            </div>
           </div>
         </div>
         </div>

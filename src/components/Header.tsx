@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { CiMenuBurger } from "react-icons/ci";
+import { TbFileCv } from "react-icons/tb";
 import { useState } from "react";
 
 const Header = ({primaryColor}:{primaryColor: string}) => {
@@ -21,7 +22,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
             <div className="flex ">
           <div className="flex align-center">
             <div className="burger burger-disable" onClick={()=>{
-                setIsNavigate((prev: any)=>{
+                setIsNavigate((prev: boolean)=>{
                   return !prev;
                 })
             }}>
@@ -30,7 +31,7 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
             {isNavigate && (
             <div className="nav">
             <div className="burger" style={{position:"absolute", left: ".5%", top:"49.5%"}} onClick={()=>{
-                setIsNavigate((prev: any)=>{
+                setIsNavigate((prev: boolean)=>{
                   return !prev;
                 })
             }}>
@@ -99,6 +100,20 @@ const Header = ({primaryColor}:{primaryColor: string}) => {
                 <div className="flex  head-btns">
 
                 <div className="ml-2" style={{ transform: "scale(1.2)" }}>
+              <a
+                href="https://drive.google.com/file/d/1ioiD-A6oiXxeSPcLN1HdNtZLUESwnWWX/view?usp=drive_link"
+                target="_blank"
+                download
+                style={{ textDecoration: "none", color: "black" }}
+                >
+                <TbFileCv 
+                  style={{ transform: "scale(2)" }}
+                  className="mr-1 text-white"
+                  />
+              </a>
+                  </div>
+
+                <div className="ml-1" style={{ transform: "scale(1.2)" }}>
               <a
                 href="https://www.linkedin.com/in/dusan-ilic-0997b4166/"
                 target="_blank"
