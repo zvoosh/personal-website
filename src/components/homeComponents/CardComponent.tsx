@@ -61,7 +61,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
   return (
     <div style={{ zIndex: "5" }}>
       <Divider />
-      <div className="font-size-17 pt-2 w-100 text-align-center ">SKILLS</div>
+      <div className="font-size-16 pt-2 w-100 text-align-center ">SKILLS</div>
       <div>
         <div
           className="circle-container"
@@ -132,7 +132,7 @@ const CardComponent = ({ primaryColor }: { primaryColor: string }) => {
                       }}
                     >
                       {item[isIndex].favicon}
-                      <div style={{ zIndex: 2, position: "relative" }}>
+                      <div style={{ zIndex: 2, position: "relative", fontSize: "1.2rem" }}>
                         {item[isIndex].text}
                       </div>
                     </Card>

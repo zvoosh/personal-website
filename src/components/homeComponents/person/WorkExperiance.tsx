@@ -121,7 +121,7 @@ const WorkExperiance = () => {
         }}
       ></div>
       <div className="person-padding-3">
-        <div className="font-size-18 person-padding-title mobile-padding-text flex justify-between">
+        <div className="font-size-16 person-padding-title mobile-padding-text flex justify-between">
           <div>
             <span>WORK EXPERIENCE</span>
           </div>
@@ -151,14 +151,14 @@ const WorkExperiance = () => {
           </div>
         </div>
         <div className={`fade ${fade ? "fade-out" : "fade-in"}`}>
-          <div className="font-size-16 pt-1 pb-1 text-blackGray person-padding-title  mobile-under-title-description mobile-font-paragraph mobile-padding-text">
+          <div className="font-size-14 pt-1 pb-1 text-blackGray person-padding-title  mobile-under-title-description mobile-font-paragraph mobile-padding-text">
             {workplaces[activeWorkplace].title}
           </div>
           <div className="flex justify-between font-size-12 pt-1 pb-1 w-100 text-bold person-padding-title person-flex person-padding-title person-flex mobile-padding-text mobile-under-title">
             <div>{workplaces[activeWorkplace].place}</div>
             <div>{workplaces[activeWorkplace].time}</div>
           </div>
-          <div className="mt-1 font-size-13 text-align-justify  mobile-font-paragraph mobile-padding-text">
+          <div className="mt-1 font-size-12 text-align-justify  mobile-font-paragraph mobile-padding-text">
             {workplaces[activeWorkplace].description}
           </div>
         </div>

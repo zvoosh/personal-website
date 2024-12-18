@@ -30,7 +30,7 @@ const skillsOne = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         {" "}
         <li>1 year of professional experience</li>{" "}
         <li>2+ years of educational development</li>{" "}
@@ -69,7 +69,7 @@ const skillsOne = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         {" "}
         <li>3+ years of learning development</li> <li>2 GitHub repositories</li>{" "}
         <li>2 highly graded University subject projects</li>{" "}
@@ -102,7 +102,7 @@ const skillsOne = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         {" "}
         <li>Udemy certified course finished</li>{" "}
         <li><a href="https://drive.google.com/file/d/1RoZ6kyRX-plMlY9GHXkLVKH0fXBd3vug/view?usp=drive_link" target="_blank" download style={{textDecoration: "underline"}}>Certificat</a></li>
@@ -141,7 +141,7 @@ const skillsTwo = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         <li>One of my biggest University projects was in Angular</li>
         <li>A whole subject practising UI methods using Angular</li>
         <li>Currently learning from Udemy licenced course</li>
@@ -178,7 +178,7 @@ const skillsTwo = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         <li>3+ years of educational experiance</li>
         <li>University proffesors highly enforce practicing SQL databases</li>
         <li>
@@ -218,7 +218,7 @@ const skillsTwo = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         <li>2 years of educational experiance</li>
         <li>
           University subject based on Java programming in Spring Framework
@@ -264,7 +264,7 @@ const skillsThree = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         <li>2 years of educational experiance</li>
         <li>
           4 separate University subjects futuring data science, data operations,
@@ -308,7 +308,7 @@ const skillsThree = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         <li>2 years of educational experiance</li>
         <li>
           4 separate University subjects futuring data science, data operations,
@@ -352,7 +352,7 @@ const skillsThree = [
       </div>
     ),
     text: (
-      <ul className="font-size-11">
+      <ul >
         <li>
           Probability and statistics first subject to teach about graph and data
           operations
