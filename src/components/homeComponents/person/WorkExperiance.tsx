@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 interface IWorkplace {
@@ -31,9 +31,14 @@ const workplaces: IWorkplace[] = [
   },
 ];
 
+const loadNumbers = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
 const WorkExperiance = () => {
   const [activeWorkplace, setActiveWorkplace] = useState<number>(0);
+  const [currentNumberIndex, setCurrentNumberIndex] = useState<number>(0);
   const [fade, setFade] = useState(false);
+  const numberIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const textIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (fade) {
@@ -44,27 +49,90 @@ const WorkExperiance = () => {
     }
   }, [activeWorkplace, fade]);
 
+  useEffect(() => {
+    numberIntervalRef.current = setInterval(() => {
+      setCurrentNumberIndex((prev) => (prev + 1) % loadNumbers.length);
+    }, 1000);
+
+    textIntervalRef.current = setInterval(() => {
+      setActiveWorkplace((prev) => (prev + 1) % workplaces.length);
+    }, 11000);
+
+    return () => {
+      if (numberIntervalRef.current) {
+        clearInterval(numberIntervalRef.current);
+      }
+      if (textIntervalRef.current) {
+        clearInterval(textIntervalRef.current);
+      }
+    };
+  }, [activeWorkplace]);
+
+  const clearIntervals = () => {
+    if (numberIntervalRef.current) {
+      clearInterval(numberIntervalRef.current);
+    }
+    if (textIntervalRef.current) {
+      clearInterval(textIntervalRef.current);
+    }
+  };
+
+  const arrowsFn = ({ left }: { left: boolean }) => {
+    setFade(true);
+    setTimeout(() => {
+      if (left) {
+        setActiveWorkplace((prev) => (prev + 1) % workplaces.length);
+      } else {
+        setActiveWorkplace(
+          (prev) => (prev - 1 + workplaces.length) % workplaces.length
+        );
+      }
+    }, 500);
+    setCurrentNumberIndex(0);
+    clearIntervals();
+  };
+
   return (
-    <div style={{ background: "#DAF7A6", borderRadius: "10px", width: '99%', padding: "1rem 0 1rem 0" }}>
+    <div
+      style={{
+        background: "#DAF7A6",
+        borderRadius: "10px",
+        width: "99%",
+        padding: "1rem 0 1rem 0",
+      }}
+    >
+      <div
+        style={{
+          position: "relative",
+          top: "-1rem",
+          background: "#DAF7A6",
+          height: "5px",
+        }}
+      ></div>
+      <div
+        style={{
+          position: "relative",
+          top: "-1.3rem",
+          background: "black",
+          height: "5px",
+          borderRadius: "100px",
+          width: `${loadNumbers[currentNumberIndex]}%`,
+          transition: 'width 1s ease-in-out',
+        }}
+      ></div>
       <div className="person-padding-3">
-        <div className="font-size-18 pb-2 person-padding-title mobile-padding-text flex justify-between">
-          <div>WORK EXPERIENCE</div>
-          <div className="flex align-center mobile-size" style={{ userSelect: "none" }}>
+        <div className="font-size-18 person-padding-title mobile-padding-text flex justify-between">
+          <div>
+            <span>WORK EXPERIENCE</span>
+          </div>
+          <div
+            className="flex align-center mobile-size"
+            style={{ userSelect: "none" }}
+          >
             <div
               style={{ cursor: "pointer" }}
               onClick={() => {
-                setFade(true);
-                setTimeout(() => {
-                  setActiveWorkplace((prev) => {
-                    if (prev === 0) {
-                      return workplaces.length - 1;
-                    } else if (prev > 0) {
-                      return prev - 1;
-                    } else {
-                      return prev;
-                    }
-                  });
-                }, 500);
+                arrowsFn({ left: true });
               }}
             >
               <FaChevronLeft className="flex p-1" />
@@ -75,15 +143,7 @@ const WorkExperiance = () => {
             <div
               style={{ cursor: "pointer" }}
               onClick={() => {
-                setFade(true);
-                setTimeout(() => {
-                  setActiveWorkplace((prev) => {
-                    if (prev === workplaces.length - 1) {
-                      return 0;
-                    }
-                    return prev + 1;
-                  });
-                }, 500);
+                arrowsFn({ left: false });
               }}
             >
               <FaChevronRight className="flex p-1" />

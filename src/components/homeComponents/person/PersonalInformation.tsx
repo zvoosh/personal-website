@@ -1,9 +1,24 @@
+import TypewriterComponent from "typewriter-effect";
+
 const PersonalInformation = () => {
   return (
-    <div className="pt-2 flex justify-center align-center" style={{background:"#FFFBCC", borderRadius: "10px" }}>
-      <div className="person-padding-3 padding-0" >
+    <div
+      className="pt-2 flex justify-center align-center"
+      style={{ background: "#FFFBCC", borderRadius: "10px" }}
+    >
+      <div className="person-padding-3 padding-0">
         <div className="font-size-18 pb-1 mobile-padding-text">
-          PERSONAL INFORMATION
+          <TypewriterComponent
+            options={{
+              strings: [
+                "PERSONAL INFORMATION",
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+              deleteSpeed: 50,
+            }}
+          />
         </div>
         <div className="mt-1 font-size-13 text-align-justify text-help mobile-font-paragraph mobile-padding-text">
           Graduated Computer Science professional with 10 months of working
