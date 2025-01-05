@@ -34,7 +34,6 @@ const workplaces: IWorkplace[] = [
 
 const WorkExperiance = () => {
   const [activeWorkplace, setActiveWorkplace] = useState<number>(0);
-  const [currentNumberIndex, setCurrentNumberIndex] = useState<number>(0);
   const [fade, setFade] = useState(false);
   const textIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -77,7 +76,6 @@ const WorkExperiance = () => {
         );
       }
     }, 500);
-    setCurrentNumberIndex(0);
     clearIntervals();
   };
 

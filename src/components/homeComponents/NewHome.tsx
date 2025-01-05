@@ -1,7 +1,7 @@
 import DusanIlicCV from "../../assets/DusanIlicCV.jpg";
 import { useEffect, useRef } from "react";
 import createIntersectionObserver from "../../functions/observer";
-import { FaCircle, FaReact, FaRegCircle } from "react-icons/fa";
+import { FaCircle, FaReact } from "react-icons/fa";
 
 const NewHome = () => {
   const elementRef = useRef<HTMLDivElement>(null);
