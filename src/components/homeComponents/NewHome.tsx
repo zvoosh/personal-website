@@ -1,10 +1,9 @@
-import { Divider } from "antd";
-import { CardComponent, EducationComponent, IntroComponent } from ".";
-import { PersonalInformation, WorkExperiance } from "./person";
+import DusanIlicCV from "../../assets/DusanIlicCV.jpg";
 import { useEffect, useRef } from "react";
 import createIntersectionObserver from "../../functions/observer";
+import { FaCircle, FaReact, FaRegCircle } from "react-icons/fa";
 
-const NewHome = ({ primaryColor }: { primaryColor: string }) => {
+const NewHome = () => {
   const elementRef = useRef<HTMLDivElement>(null);
   const educationRef = useRef<HTMLDivElement>(null);
   const certificateRef = useRef<HTMLDivElement>(null);
@@ -36,68 +35,199 @@ const NewHome = ({ primaryColor }: { primaryColor: string }) => {
   }, []);
 
   return (
-    <div className="w-100 h-100 paper-background">
+    <div className="w-100 h-100 bg-white">
       <div className="scrollComponent">
-        <div className="page-paddings">
-          <div className="homeIntroPerson">
-            <IntroComponent />
-            <Divider />
-            <div className="h-50 flex justify-center align-center personal-info-transition">
-              <PersonalInformation />
-            </div>
-            <Divider />
-          </div>
-          <div
-            ref={elementRef}
-            className="flex justify-center align-center transition-element"
-          >
-            <WorkExperiance />
-          </div>
-          <CardComponent primaryColor={primaryColor} />
-          <div ref={educationRef} className="transition-element">
-            <EducationComponent />
-          </div>
-          <div ref={certificateRef}
-            style={{
-              background: "#d2b48c",
-              borderRadius: "10px",
-              marginBottom: "1rem",
-            }}
-          >
-            <div className="w-100 h-100 p-2 flex justify-start">
+        <section about="intro">
+          {/* Intro start */}
+          <div className="w-100 height-80-vh">
+            <div className="hi-image-cont">
+              <div className="hi-cont">
+                <div className="hi-text">Hi, I'm Dusan Ilic</div>
+                <div className="text-gray">
+                  I'm a graduated Informatics student with 11 months of
+                  experience as a Junior Front-end Web Developer.
+                </div>
+              </div>
               <div>
+                <img src={DusanIlicCV} className="scale-image" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Intro finish */}
+        {/* Work start */}
+
+        <section about="work">
+          <div className="work-exp-cont">
+            <div className="flex justify-center mb-5">
+              <div style={{ textAlign: "center" }}>
                 <div
-                  style={{ color: "black" }}
-                  className="font-size-16 pt-3 pb-1 text-blackGray person-padding-title  mobile-under-title-description mobile-font-paragraph mobile-padding-text"
+                  className="m-1 mt-2"
+                  style={{ fontSize: "1.4rem", fontWeight: "bold" }}
                 >
-                  CERTIFICATES
+                  Work experience
                 </div>
-                <div className="flex justify-between font-size-12 pt-1 pb-1 w-100 text-bold person-padding-title person-flex mobile-padding-text mobile-under-title">
-                  <div>
-                    <a
-                      href="https://drive.google.com/file/d/1RyUHuNSFy9zbOc4DtYFRc7kd2jAtMzYm/view?usp=drive_link"
-                      target="_blank"
-                      style={{ color: "black" }}
-                    >
-                      React - The Complete Guide 2023
-                    </a>
+                <div className="text-gray">
+                  These are my past working places
+                </div>
+              </div>
+            </div>
+            <div className="w-100 flex justify-center">
+              <div className="job-cont">
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <div>
+                      <div
+                        className="mb-05"
+                        style={{ fontSize: "1.3rem", fontWeight: "bold" }}
+                      >
+                        Junior Software Developer 1
+                      </div>
+                      <div style={{ color: "gray" }}>Front-end developer</div>
+                    </div>
+                    <div>
+                      <FaReact
+                        style={{
+                          color: "gray",
+                          transform: "scale(2)",
+                          margin: ".5rem",
+                        }}
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="flex justify-between font-size-12 pt-1 pb-1 w-100 text-bold person-padding-title person-flex mobile-padding-text mobile-under-title">
-                  <div>
-                    <a
-                      href="https://drive.google.com/file/d/1RoZ6kyRX-plMlY9GHXkLVKH0fXBd3vug/view?usp=drive_link"
-                      target="_blank"
-                      style={{ color: "black" }}
-                    >
-                      REST APIs with Flask and Python in 2024
-                    </a>
+                  <div style={{ color: "#333333" }}>
+                    As a front-end web development, I utilized React.js
+                    technology with TypeScript. The libraries in the projects
+                    include Axios, React-Query, React-Context, Redux, React
+                    Router, AntD, and various other complementary libraries.
+                    Additionally, I used Jest.js library for testing my code and
+                    applications to ensure the quality of my software solutions
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        {/* Work Finish */}
+
+        <section about="knowledge">
+          <div style={{ width: "100vw", height: "50vh" }}>
+            <div className="flex justify-center mb-5">
+              <div style={{ textAlign: "center" }}>
+                <div
+                  className="m-1 mt-2"
+                  style={{ fontSize: "1.4rem", fontWeight: "bold" }}
+                >
+                  Knowledge
+                </div>
+                <div className="text-gray">Skill ranking</div>
+              </div>
+            </div>
+            <div className="w-100 flex justify-center">
+              <div className="grade-cont">
+                <div className="flex justify-between m-1">
+                  <div>React</div>
+                  <div>
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                  </div>
+                </div>
+                <div className="flex justify-between m-1">
+                  <div>Node.js</div>
+                  <div>
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                  </div>
+                </div>
+                <div className="flex justify-between m-1">
+                  <div>Flask</div>
+                  <div>
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                  </div>
+                </div>
+                <div className="flex justify-between m-1">
+                  <div>Angular</div>
+                  <div>
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                  </div>
+                </div>
+                <div className="flex justify-between m-1">
+                  <div>Vue</div>
+                  <div>
+                    <FaCircle
+                      style={{ color: "yellowgreen", marginRight: ".2rem" }}
+                    />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                    <FaCircle style={{ marginRight: ".2rem" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const PersonalInformation = () => {
           />
         </div>
         <div className="mt-1 font-size-12 text-align-justify text-help mobile-font-paragraph mobile-padding-text">
-          Graduated Computer Science professional with 10 months of working
+          I'm a graduated Informatics student with 11 months of experience as a Junior Front-end Web Developer.
           experience as a Junior Front-end Web Developer in the industry. I am a
           committed, positive, and hard-working individual, always striving to
           complete tasks on time and correctly. I enjoy collaborating with teams

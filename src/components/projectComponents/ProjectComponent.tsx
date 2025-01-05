@@ -13,7 +13,7 @@ const ProjectComponent = () => {
           <div className=" project-margin-top-3">
             <div className="project-title">My Projects</div>
             
-            <div className="pl-1 font-size-13 pt-1  project-intro-text-height project-font-paragraph project-padding-text">
+            <div className="font-size-12 pt-1 project-intro-text-height project-font-paragraph ">
               Link to Artificial Intelligence: <a
                 href="https://colab.research.google.com/drive/1hqhbojPlZkWETzeyZN3Yb4dKa0TQ48o7?usp=sharing"
                 target="_blank"
@@ -55,11 +55,9 @@ const ProjectComponent = () => {
             </div>
             <div
               className="w-50 h-100"
-              style={{ borderRadius: "2%", border: "1px solid black", color:"black", marginLeft: "8rem" }}
+              style={{ borderRadius: "2%", color:"black", marginLeft: "8rem" }}
             >
-              <div style={{ height: "50vh", position: "relative" }}>
-                <div className="half-circle-second" style={{background: "white" , borderBottom: "1px solid black"}}></div>
-                <div className="half-circle-reverse" style={{borderBottom: '1px solid black'}}></div>
+              <div style={{ height: "50vh", position: "relative" }}  className="flex align-center">
                 <div className="w-100  m-3 ml-4">
                   <div className="font-size-13">
                     THE DEVELOPMENET AND BRIEF HISTORY OF CHINESE CULTURE
@@ -80,16 +78,16 @@ const ProjectComponent = () => {
                     kept in React.js technologies, for example Route state,
                     Variable state..
                   </div>
-                  <div className="mt-1 mr-5 ml-2 font-size-11">
+                  <div className="mt-1 mr-5  font-size-11">
                     The idea to make such a project came from classes of the
                     subject I choose for my graduating thesees.
                   </div>
-                  <div className="mt-1 mr-5 ml-2 font-size-11">
+                  <div className="mt-1 mr-5  font-size-11">
                     The project has it's following documentation of 30 pages,
                     covering Coding, Testing, UI Testing, User Requirements and
                     etc.
                   </div>
-              <div className="mt-2 ml-2  font-size-11">
+              <div className="mt-2 font-size-11">
                 <a
                   href="https://zvoosh.github.io/Chinese-Cultural-Evolution/"
                   target="_blank"
@@ -113,11 +111,9 @@ const ProjectComponent = () => {
             </div>
             <div
               className="ml-3 w-50 h-100"
-              style={{ borderRadius: "2%", background: "white" , border: "1px solid black" , marginLeft: "8rem" }}
+              style={{ borderRadius: "2%", background: "white" ,  marginLeft: "8rem" }}
             >
-              <div style={{ height: "50vh", position: "relative" }}>
-                <div className="half-circle-second" style={{background: "white", borderBottom: '1px solid black'}}></div>
-                <div className="half-circle-reverse" style={{borderBottom: '1px solid black'}}></div>
+              <div style={{ height: "50vh", position: "relative" }} className="flex align-center">
                 <div className="w-100 m-3 ml-4">
                   <div className="font-size-13">HOTEL APPLICATION</div>
                   <div className="mt-1 mr-5 font-size-11">
@@ -130,18 +126,18 @@ const ProjectComponent = () => {
                     UML modelovanje, software implementation, software testing
                     and besides all documentation.
                   </div>
-                  <div className="mt-1 ml-2 mr-5 font-size-11">
+                  <div className="mt-1  mr-5 font-size-11">
                     The project has a backend side writen in Node.js and MongoDB
                     as for the frontend side it's built in Vue.js and styled
                     with Vuetify. Besides it's functions documentation is
                     provided for the project.
                   </div>
-                  <div className="mt-1 mr-5 ml-2 font-size-11">
+                  <div className="mt-1 mr-5  font-size-11">
                     Application holds the hotels welcoming page, about page, a
                     page for showcasing rooms and their availability, a page for
                     auditoriums and a profile page
                   </div>
-                  <div className="mt-1 mr-5 ml-2 font-size-11">
+                  <div className="mt-1 mr-5  font-size-11">
                     On the application the client can login, reserve rooms and
                     audiotoriums, and read about hotel and view images taken of
                     it's enterior.
@@ -161,12 +157,10 @@ const ProjectComponent = () => {
               </div>
             </div>
             <div
-              className="ml-3 w-50 h-100"
-              style={{ borderRadius: "2%", background: "white" , border: "1px solid black", marginLeft: "8rem"  }}
+              className="ml-3 w-50 h-100 flex align-center justify-center"
+              style={{ borderRadius: "2%", background: "white" , marginLeft: "8rem"  }}
             >
-              <div style={{ height: "50vh", position: "relative" }}>
-                <div className="half-circle-second" style={{background: "white", borderBottom: '1px solid black'}}></div>
-                <div className="half-circle-reverse"style={{borderBottom: '1px solid black'}}></div>
+              <div style={{ height: "50vh" }} className="flex align-center">
                 <div className="w-100 m-3 ml-4">
                   <div className="font-size-13">
                     AIPLANE TICKETS APPLICATION
@@ -185,7 +179,7 @@ const ProjectComponent = () => {
                     The backend side of the application is written in Node.js.
                     As for the frontend side the technology used is React.js.
                   </div>
-                  <div className="mt-1 mr-5 ml-2 font-size-11">
+                  <div className="mt-1 mr-5  font-size-11">
                     RASA chatbot is made of python scripts like actions, models,
                     etc.
                   </div>
@@ -210,7 +204,7 @@ const ProjectComponent = () => {
             </div>
             <div
               className="w-100 h-100 "
-              style={{ borderRadius: "2%", border: "1px solid black", color:"black" }}
+              style={{ borderRadius: "2%", color:"black" }}
             >
               <div style={{ height: "100%", position: "relative" }}>
                 <div className="w-100 m-1">
@@ -266,7 +260,7 @@ const ProjectComponent = () => {
             </div>
             <div
               className="w-100 h-100"
-              style={{ borderRadius: "2%", background: "white" , border: "1px solid black" }}
+              style={{ borderRadius: "2%", background: "white"  }}
             >
               <div style={{ height: "100%", position: "relative" }}>
                 <div className="w-100 m-1">
@@ -313,7 +307,7 @@ const ProjectComponent = () => {
             </div>
             <div
               className="w-100 h-100"
-              style={{ borderRadius: "2%", background: "white" , border: "1px solid black"  }}
+              style={{ borderRadius: "2%", background: "white"   }}
             >
               <div style={{ height: "100%", position: "relative" }}>
                 <div className="w-100 m-1">

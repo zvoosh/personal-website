@@ -14,8 +14,8 @@ const workplaces: IWorkplace[] = [
     place: "Factory World Wide, Belgrade",
     time: "July 2022 - June 2023",
     description: `As a Junior Software Engineer specializing in Front-end Web
-          Development, I utilized React.js technology in combination with
-          TypeScript language. During m y 11 months of experience, I contributed
+          Development, I utilized React.js technology with
+          TypeScript. During m y 11 months of experience, I contributed
           to two pivotal projects: one for the Automotive industry and another
           for the Ministry of Finance. The libraries used in these projects
           include Axios, React-Query, React-Context, Redux, React Router, AntD,
@@ -31,13 +31,11 @@ const workplaces: IWorkplace[] = [
   },
 ];
 
-const loadNumbers = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
 const WorkExperiance = () => {
   const [activeWorkplace, setActiveWorkplace] = useState<number>(0);
   const [currentNumberIndex, setCurrentNumberIndex] = useState<number>(0);
   const [fade, setFade] = useState(false);
-  const numberIntervalRef = useRef<NodeJS.Timeout | null>(null);
   const textIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -50,18 +48,12 @@ const WorkExperiance = () => {
   }, [activeWorkplace, fade]);
 
   useEffect(() => {
-    numberIntervalRef.current = setInterval(() => {
-      setCurrentNumberIndex((prev) => (prev + 1) % loadNumbers.length);
-    }, 1000);
 
     textIntervalRef.current = setInterval(() => {
       setActiveWorkplace((prev) => (prev + 1) % workplaces.length);
     }, 11000);
 
     return () => {
-      if (numberIntervalRef.current) {
-        clearInterval(numberIntervalRef.current);
-      }
       if (textIntervalRef.current) {
         clearInterval(textIntervalRef.current);
       }
@@ -69,9 +61,6 @@ const WorkExperiance = () => {
   }, [activeWorkplace]);
 
   const clearIntervals = () => {
-    if (numberIntervalRef.current) {
-      clearInterval(numberIntervalRef.current);
-    }
     if (textIntervalRef.current) {
       clearInterval(textIntervalRef.current);
     }
@@ -101,25 +90,6 @@ const WorkExperiance = () => {
         padding: "1rem 0 1rem 0",
       }}
     >
-      <div
-        style={{
-          position: "relative",
-          top: "-1rem",
-          background: "#DAF7A6",
-          height: "5px",
-        }}
-      ></div>
-      <div
-        style={{
-          position: "relative",
-          top: "-1.3rem",
-          background: "black",
-          height: "5px",
-          borderRadius: "100px",
-          width: `${loadNumbers[currentNumberIndex]}%`,
-          transition: 'width 1s ease-in-out',
-        }}
-      ></div>
       <div className="person-padding-3">
         <div className="font-size-16 person-padding-title mobile-padding-text flex justify-between">
           <div>
