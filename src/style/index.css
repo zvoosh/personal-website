@@ -1,11 +1,7 @@
-@import "global.css";
-@import "menu.css";
-@import "spaces.scss";
-@import "colors.scss";
-@import "flex-box.scss";
-@import "initial.scss";
-@import "header.scss";
-@import "newHome.scss";
 @import "general.scss";
-@import "project.scss";
-@import "transitions.scss"
+@import "./components/newHome.scss";
+@import "./components/header.scss";
+@import "./components/project.scss";
+@import "./util/colors.scss";
+@import "./util/flex-box.scss";
+@import "./util/spaces.scss";
