@@ -1,142 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap");
 
 @media only screen and (max-width: 767px) {
-    .burger{
-        display: block;
-    }
-    .head-btns{
-        display: none;
-    }
-    .nav{
-        position: absolute;
-        width: 100%;
-        height: 190vh;
-        background-color: white;
-        color: white;
-        z-index: 20; 
-        display: flex; 
-        // align-items: center; 
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 9.5rem;
-        padding-left: .25rem;
-        text-align: right;
-        
-    }
-    .text-center {
-        text-align: center;
-    }
+  .burger {
+    display: block;
+  }
 
-    .headBtn {
-        border-radius: 1rem;
-        font-family: "Hedvig Letters Sans", sans-serif;
-    }
+  .head-btns {
+    display: none;
+  }
+
+  .nav {
+    position: absolute;
+    width: 100%;
+    height: 190vh;
+    background-color: white;
+    color: white;
+    z-index: 20;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 9.5rem;
+    padding-left: 0.25rem;
+    text-align: right;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  .headBtn {
+    border-radius: 1rem;
+    font-family: "Hedvig Letters Sans", sans-serif;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .text-center {
-        text-align: center;
-    }
-    .nav{
-        position: absolute;
-        width: 100%;
-        height: 190vh;
-        background-color: white;
-        color: white;
-        z-index: 20; 
-        display: flex; 
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 9.5rem;
-        padding-left: .25rem;
-        text-align: right;
-        
-    }
-    .text-center {
-        text-align: center;
-    }
+  .text-center {
+    text-align: center;
+  }
+  .head-btns {
+    display: flex;
+  }
 
-    .headBtn {
-        border-radius: 1rem;
-        font-family: "Hedvig Letters Sans", sans-serif;
-    }
+
+  .nav {
+    position: absolute;
+    width: 100%;
+    height: 190vh;
+    background-color: white;
+    color: white;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 9.5rem;
+    padding-left: 0.25rem;
+    text-align: right;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  .headBtn {
+    border-radius: 1rem;
+    font-family: "Hedvig Letters Sans", sans-serif;
+  }
 }
-
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-    .text-center {
-        text-align: center;
-    }
-    
-    .burger-disable{
-        display: none;
-    }
+  .text-center {
+    text-align: center;
+  }
 
-    .headBtn {
-        border-radius: 1rem;
-        font-size: 2rem;
-        font-family: "Hedvig Letters Sans", sans-serif;
-    }
+  .burger-disable {
+    display: none;
+  }
+
+  .head-btns {
+    display: flex;
+  }
+
+  .headBtn {
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-family: "Hedvig Letters Sans", sans-serif;
+  }
 }
 
-
-
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-    .text-center {
-        text-align: center;
-    }
+  .text-center {
+    text-align: center;
+  }
 
-    .burger-disable{
-        display: none;
-    }
+  .burger-disable {
+    display: none;
+  }
 
-    .headBtn {
-        border-radius: 1rem;
-        font-size: 1.4rem;
-        font-family: "Hedvig Letters Sans", sans-serif;
-    }
+  .head-btns {
+    display: flex;
+  }
+  .headBtn {
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-family: "Hedvig Letters Sans", sans-serif;
+  }
 }
 
 @media only screen and (min-width: 1441px) {
-    .text-center {
-        text-align: center;
-    }
+  .text-center {
+    text-align: center;
+  }
+  .head-btns {
+    display: flex;
+  }
 
-    .burger-disable{
-        display: none;
-    }
+  .burger-disable {
+    display: none;
+  }
 
-    .headBtn {
-        width: 15%;
-        border-radius: 1rem;
-        font-size: 1.2rem;
-        font-family: "Hedvig Letters Sans", sans-serif;
-    }
+  .headBtn {
+    width: 15%;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-family: "Hedvig Letters Sans", sans-serif;
+  }
 }
 
 .animated {
-    animation: colorSwitch 2s ease infinite;
+  animation: colorSwitch 2s ease infinite;
 }
 
 @keyframes colorSwitch {
-    0% {
-        background-color: #5BE9B9;
-    }
+  0% {
+    background-color: #5be9b9;
+  }
 
-    25% {
-        background-color: #ffbaba;
-    }
+  25% {
+    background-color: #ffbaba;
+  }
 
-    50% {
-        background-color: #ff7b7b;
-    }
+  50% {
+    background-color: #ff7b7b;
+  }
 
-    75% {
-        background-color: #48ba94;
-    }
+  75% {
+    background-color: #48ba94;
+  }
 
-    100% {
-        background-color: #5BE9B9;
-    }
+  100% {
+    background-color: #5be9b9;
+  }
 }

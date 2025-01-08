@@ -78,7 +78,7 @@ const Header = () => {
                         setIsNavigate(false);
                       }}
                     >
-                      <IoPersonOutline style={{marginRight: "1rem"}}/>
+                      <IoPersonOutline style={{ marginRight: "1rem" }} />
                       Personal Information
                     </div>
                     <div
@@ -89,13 +89,13 @@ const Header = () => {
                         setIsNavigate(false);
                       }}
                     >
-                     <GrProjects  style={{marginRight: "1rem"}}/> Projects
+                      <GrProjects style={{ marginRight: "1rem" }} /> Projects
                     </div>
                   </div>
                 </div>
               )}
               <div
-                className=" font-size-18 pl-4 mr-3"
+                className="font-size-18 pl-4 mr-3"
                 style={{
                   letterSpacing: ".2rem",
                   userSelect: "none",
@@ -105,7 +105,7 @@ const Header = () => {
                 Dusan Ilic
               </div>
             </div>
-            <div className="flex head-btns">
+            <div className="head-btns">
               <div
                 className="m-1 font-size-12 text-center flex align-center user-select cursor "
                 style={{ color: "gray" }}
@@ -126,7 +126,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="flex  head-btns">
+          <div className="head-btns">
             <div className="ml-2" style={{ transform: "scale(1.2)" }}>
               <a
                 href="https://drive.google.com/file/d/1ioiD-A6oiXxeSPcLN1HdNtZLUESwnWWX/view?usp=drive_link"
