@@ -68,7 +68,7 @@ const Header = () => {
                         textAlign: "center",
                       }}
                     >
-                      Dusan Ilic
+                      Dusan Iliccccc
                     </div>
                     <div
                       className="m-1 p-1 font-size-12 user-select cursor "
@@ -107,7 +107,7 @@ const Header = () => {
             </div>
             <div className="head-btns">
               <div
-                className="m-1 font-size-12 text-center flex align-center user-select cursor "
+                className="m-1 font-size-12 text-center flex align-center user-select cursor"
                 style={{ color: "gray" }}
                 onClick={() => {
                   handleNavigation("/");
@@ -155,7 +155,7 @@ const Header = () => {
             </div>
             <div className="ml-1 pr-3" style={{ transform: "scale(1.2)" }}>
               <a
-                href="https://mail.google.com/mail/u/0/#compose"
+                href="mailto:dusan.ilic1999@gmail.com?subject=Hello"
                 target="_blank"
                 style={{ textDecoration: "none", color: "gray" }}
               >

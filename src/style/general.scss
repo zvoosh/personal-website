@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+.font-sans {
+  font-family: "Open Sans", serif;
+}
+
 .headerSpace {
   height: 10vh;
   width: 100vw;
@@ -44,14 +48,14 @@ li {
 }
 
 .custom-spinner {
-  border: 6px solid #f3f3f3; 
-  border-top: 6px solid #000000; 
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #000000;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  animation: spin .5s linear infinite;
-  position: fixed; 
-  z-index: 9999; 
+  animation: spin 0.5s linear infinite;
+  position: fixed;
+  z-index: 9999;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
